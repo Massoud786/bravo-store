@@ -93,11 +93,13 @@ body {
 .menu{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     list-style: none;
     gap: 24px;
     margin: 15px;
     padding: 10px;
-    height: 50px;
+    height: auto;
 }
 .menu-item{
     position: relative;
@@ -146,7 +148,7 @@ body {
     display: inline-block;
 }
 .hamburger-icon span {
-    position: relative;
+    position: absolute;
     left: 0;
     right: 0;
     height: 2px;
