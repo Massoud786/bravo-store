@@ -243,7 +243,7 @@ body {
     max-width: 80%;
     height: auto;
     margin-top: 15px;
-    border-radius: 10px;
+    border-radius: 20px;
     object-fit: cover;
 }
 .carousel-item h3 {
