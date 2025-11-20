@@ -7,7 +7,6 @@ productsBtn.addEventListener('click', () => {
 });
 
 // product carousel auto-slide
-
 const tarck = document.querySelector(".carousel-track");
 const slides = document.querySelectorAll(".carousel-item");
 
