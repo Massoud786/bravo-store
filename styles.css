@@ -250,6 +250,27 @@ body {
     margin-bottom: 8px;
     font-size: 1.4rem;
 }
+.carousel-btn {
+  position: absolute;
+  top: 75%;
+  border: none;
+  background: none;
+  width: 23px;
+  cursor: pointer;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-btn:hover{
+    background-color: darkgray;
+}
+.prev-btn {
+  left: 225px;       
+}
+.next-btn {
+  right: 225px;
+}
 
 
 

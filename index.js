@@ -17,9 +17,9 @@ function goToSlide(index) {
     tarck.style.transform = `translatex(-${index * slideWidth}px)`;
 
 }
-if(tarck && slides.length > 0){
-    setInterval(()=>{
-        currentSlide = (currentSlide + 1) % slides.length;
-        goToSlide(currentSlide);
-    },3000);
-}
+//if(tarck && slides.length > 0){
+  //  setInterval(()=>{
+      //  currentSlide = (currentSlide + 1) % slides.length;
+       // goToSlide(currentSlide);
+   // },3000);
+//}
