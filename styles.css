@@ -58,12 +58,12 @@ body {
 .cart-icon img{
     width: 40px;
     height: 40px;
-    background-color: black;
+    background: none;
     border: none;
     cursor: pointer;
 }
 .cart-icon img:hover{
-    background-color: darkblue;
+    background-color: rgba(169, 169, 169, 0.338);
 }
 .header-right {
  display: flex;
