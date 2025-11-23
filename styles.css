@@ -95,28 +95,37 @@ body {
 }
 .menu{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     list-style: none;
-    gap: 24px;
+    gap: 44px;
     margin: 0;
     padding: 10px;
-    height: auto;
-    
+    height: auto;  
 }
-.menu-item{
+.menu-item a{
     position: relative;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
     color: #333;
     cursor: pointer;
     padding: 0;
+    text-decoration: none;
+}
+.menu-item {
+     position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    color: #333;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
 }
 .category-nav .menu-item:not(.products){
     border: 0.5px solid darkgray;
     border-radius: 30px;
-    padding: 10px; 
+    padding: 10px 14px;
+
 }
 /*
 .category-nav .menu-item:not(.products)::after{
@@ -280,5 +289,6 @@ body {
   right: 8px;
 }
 
+/* Deals Page */
 
 
