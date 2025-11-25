@@ -297,16 +297,39 @@ body {
     padding: 0 20px;
  }
  .deals-page h1 {
-    text-align: center;
-    margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.1);
  }
- .top-deals-section {
+ .deals-page h1::after{
+    content: "";
+    width: 500px;
+    height: 4px;
+    background: purple;
+    display: block;
+    border-radius: 2px;
+    margin: 10px auto 0;
+ }
+ .deals-section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+ }
+ .deals-section p {
+    font-size: 24px;
+    color: #666;
+ }
+ .deals-section {
     text-align: center;
     height: auto;
     border: 1px solid rgba(0, 0, 0, 0.052);
     box-shadow: 0 10px 10px rgba(255, 255, 255, 0);
     border-radius: 20px;
     background-color: #ffffff;
+    margin: 10px;
  }
  .deals-container {
     display: flex;
@@ -362,5 +385,6 @@ body {
  .add-btn:hover{
     background-color: darkorchid;
  }
+
 
 
