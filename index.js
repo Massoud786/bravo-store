@@ -8,20 +8,25 @@ productsBtn.addEventListener('click', () => {
 
 // Toggle Dark or Light mode
 const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById("theme-icon");
 const body = document.body;
 
 // Load Saved mode 
 if (localStorage.getItem("dark-mode") === "enabled"){
     body.classList.add("dark-mode");
     themeToggle.checked = true;
+    themeIcon.textContent = "🌙";
+    
 }
 themeToggle.addEventListener("change", () => {
     if(themeToggle.checked){
         body.classList.add("dark-mode");
+        themeIcon.textContent = "🌙";
         localStorage.setItem("dark-mode", "enabled");
     }
     else {
         body.classList.remove("dark-mode");
+        themeIcon.textContent = "🌞";
         localStorage.setItem("dark-mode", "disabled");
     }
 });
