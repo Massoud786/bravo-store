@@ -254,6 +254,10 @@ body.dark-mode .menu-item a{
     display: none;
     z-index: 20;
 }
+body.dark-mode .products-dropdown {
+    background: #333;
+    border: 0.1px solid rgba(128, 128, 128, 0.483);
+}
 .products-dropdown a {
     display: block;
     padding: 8px 16px;
@@ -264,6 +268,9 @@ body.dark-mode .menu-item a{
 }
 .products-dropdown a:hover{
     background: #f5f5f5;
+}
+body.dark-mode .products-dropdown a:hover{
+    background: grey;
 }
 /* show dropdown */
 .products.open .products-dropdown {
