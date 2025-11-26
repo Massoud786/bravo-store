@@ -6,7 +6,7 @@ body {
 }
 .dark-mode {
     background-color: #333;
-    color: #f5f5f5;
+    color: lightgray;
 }
 .theme-switch {
     position: relative;
@@ -147,7 +147,7 @@ body.dark-mode .category-nav .menu-item:not(.products) {
     border: 0.1px solid rgba(128, 128, 128, 0.414);
 }
 body.dark-mode .menu-item a{
-    color: #f5f5f5;
+    color: lightgray;
 }
 .menu{
     display: flex;
@@ -183,19 +183,6 @@ body.dark-mode .menu-item a{
     padding: 10px 14px;
 
 }
-/*
-.category-nav .menu-item:not(.products)::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -9px;
-    height: 2px;
-    background: #e41e26;
-    transform-origin: center;
-    transition: transform 0.2s ease-out;
-}
-*/
 .category-nav .menu-item:not(.products):hover::after{
     transform: scaleX(1);
 }
@@ -358,8 +345,237 @@ body.dark-mode .carousel {
 .next-btn {
   right: 10px;
 }
+.section-wrapper {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+.section-title {
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+}
+.card-grid {
+    display: grid;
+    gap: 1.5rem;
+}
 
- /* Deals Page */
+/* 2 columns on tablet / 4 on desktop */
+@media (min-width: 640px) {
+    .card-grid {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+}
+@media (min-width: 960px){
+    .card-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+/* Category cards */
+.category-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 1.5rem 1.25rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    text-align: center;
+}
+.dark-mode .category-card {
+    background: #333;
+    border: 1px solid rgba(128, 128, 128, 0.266);
+}
+.category-card h3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
+}
+.dark-mode .category-card h3 {
+    color: rgb(211, 211, 211);
+}
+.category-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+.dark-mode .category-card p {
+    color: rgb(211, 211, 211);
+}
+.category-icon {
+    font-size: 2rem;
+}
+/* Product cards (Best Sellers) */
+.products-grid {
+    align-items: stretch;
+}
+.product-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 1.25rem 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.dark-mode .product-card {
+    background: #333;
+    border: 1px solid rgba(128, 128, 128, 0.266);
+}
+.product-img {
+    max-width: 100%;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.product-info h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+.dark-mode .product-info h3 {
+    color: rgb(211, 211, 211);
+}
+.stars {
+    font-size: 0.9rem;
+    color: #f5a623;
+}
+.reviews {
+    color: #555;
+    margin-left: 0.25rem;
+}
+.dark-mode .reviews {
+   color: rgb(211, 211, 211);
+} 
+.product-desc {
+    font-size: 0.85rem;
+    color: #555;
+}
+.dark-mode .product-desc {
+    color: rgb(211, 211, 211);
+}
+/* Brands row */
+.brands-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+.brand-pill {
+    border: 1px solid #e0e0e0;
+    border-radius: 999px;
+    padding: 0.6rem 1.4rem;
+    background: #ffffff;
+    font-size: 0.9rem;
+    letter-spacing: 0.05;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+.dark-mode .brand-pill {
+    background: #333;
+    border: 1px solid rgba(128, 128, 128, 0.266);
+    color: rgb(211, 211, 211);
+}
+.brand-pill:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+    background: #f8f8f8;  
+}
+.dark-mode .brand-pill:hover {
+    background: #666;
+}
+
+/* Why Shop at BravoStore card */
+.why-grid .why-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+}
+.dark-mode .why-grid .why-card {
+     background: #333;
+    border: 1px solid rgba(128, 128, 128, 0.266);
+    color: rgb(211, 211, 211);
+}
+.why-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.why-card h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
+}
+.why-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+.dark-mode .why-card p {
+    color: rgb(211, 211, 211);
+}
+
+        /***** Footer *******/
+footer.footer {
+    background: #1e1e1e;
+    color: #ddd;
+    padding: 3rem 0 1rem;
+    margin-top: 3rem;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 0 1.5rem;
+}
+.footer-col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.footer-logo {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-col ul li {
+    margin-bottom: 0.6rem;
+}
+.footer-col ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.footer-col ul li a:hover {
+    color: #fff;
+    padding-left: 4px;
+}
+.footer-brand p {
+    max-width: 260px;
+    margin-bottom: 1rem;
+}
+.footer-socials a {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 12px;
+    transition: 0.2s;
+}
+.footer-socials a:hover {
+    color: #0ef;
+    transform: translateY(-3px);
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+    color: #888;
+    font-size: 0.9rem;
+}
+/**************************** Deals Page *************************/
 
  .deals-page {
     max-width: 100%;
@@ -471,6 +687,8 @@ body.dark-mode .carousel {
  .add-btn:hover{
     background-color: darkorchid;
  }
+
+
 
 
 
