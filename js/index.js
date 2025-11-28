@@ -91,7 +91,3 @@ window.addEventListener("resize", () => {
 // kick things off
 goToSLide(0);
 startAutoSLide();
-
-// Date for footer
-const date = document.getElementById("year");
-date.textContent = new Date().getFullYear();
