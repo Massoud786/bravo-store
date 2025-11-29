@@ -91,3 +91,29 @@ window.addEventListener("resize", () => {
 // kick things off
 goToSLide(0);
 startAutoSLide();
+
+// ===== Search products from HOME page =====
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById("searchInput");
+  const searchBtn = document.getElementById("searchBtn");
+
+  if (searchInput && searchBtn) {
+    // Click on search icon
+    searchBtn.addEventListener("click", () => {
+      const query = searchInput.value.trim().toLowerCase();
+      if (query.length > 0) {
+        window.location.href = `products.html?search=${encodeURIComponent(query)}`;
+      }
+    });
+
+    // Press Enter in search box
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        const query = searchInput.value.trim().toLowerCase();
+        if (query.length > 0) {
+          window.location.href = `products.html?search=${encodeURIComponent(query)}`;
+        }
+      }
+    });
+  }
+});

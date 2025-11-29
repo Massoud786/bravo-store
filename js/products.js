@@ -345,7 +345,7 @@ const products = [{
 
 // ========= Rendering ========
 const grid = document.getElementById("products-grid");
-const searchInput = document.getElementById("product-search");
+const searchInput = document.getElementById("searchInput");
 const filterButtons = document.querySelectorAll(".filter-btn");
 
 // Helper: create star string from rating 
@@ -394,8 +394,9 @@ list.forEach((product) => {
 // read default category from URL
 const params = new URLSearchParams(window.location.search);
 const defaultCategory = (params.get("category")|| "all").toLowerCase();
+const defaultSearch = (params.get("search") || "").toLowerCase();
 let currentCategory = defaultCategory;
-let currentSearch = "";
+let currentSearch = defaultSearch;
 
 
 // Apply both category + search filter 
@@ -425,16 +426,24 @@ function getFilteredProducts() {
   document.addEventListener("DOMContentLoaded", () =>{
     // category filter buttons
     filterButtons.forEach((btn) =>{
+        // highlight the button that matches the current category 
         if ((btn.dataset.category || "all") === currentCategory) {
       btn.classList.add("active");
     }
+    // add click event once
+    btn.addEventListener("click", () => handleCategoryClick(btn));
     });
 
+     // Client-side products search
+   if(searchInput){
+    searchInput.addEventListener("input", (e) => {
+        currentSearch = e.target.value.trim().toLowerCase();
+        renderProducts(getFilteredProducts());
+    });
+   }
     // initial render using filters
     renderProducts(getFilteredProducts());
-    
-     // category filter buttons
-     filterButtons.forEach((btn) => {
-     btn.addEventListener("click", () => handleCategoryClick(btn));
-     });
   });
+  
+  
+   
