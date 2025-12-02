@@ -358,7 +358,7 @@ function getStarString (rating){
 function renderProducts(list) {
     if (!grid) return;
     if(list.length === 0){
-        grid.innerHTML = `<p>No products found.<p/>`;
+        grid.innerHTML = `<p class="grid-product">No products found.<p/>`;
         return;
     }
 

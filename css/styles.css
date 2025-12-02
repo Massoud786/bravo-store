@@ -817,6 +817,11 @@ footer.footer {
 .dark-mode .add-to-cart-btn {
     color: lightgray;
 }
+.grid-product {
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+}
 
 
 
