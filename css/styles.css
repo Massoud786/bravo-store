@@ -162,6 +162,7 @@ body.dark-mode .menu-item a{
     padding: 10px;
     height: auto;  
 }
+
 .menu-item a{
     position: relative;
     font-size: 17px;
@@ -266,6 +267,67 @@ body.dark-mode .products-dropdown a:hover{
 .products.open .products-dropdown {
     display: block;
 }
+@media (max-width: 1268px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+        padding: 0.8rem 0;
+    }
+    .header .search-container {
+        width: 90%;
+    }
+    .header-right {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+    }
+    .cart-icon img {
+        width: 28px;
+    }
+    .category-nav {
+        padding: 0.6rem 0;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.6rem;
+        width: 95%;
+    }
+    .menu-item {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .menu-item button,
+    .menu-item a {
+        width: 30% !important;
+        padding: 0.45rem 0.7rem;
+        text-align: center;
+        font-size: 0.9rem;
+        border-radius: 30px;
+        display: block;
+    }
+   
+    .products-dropdown {
+        margin: 0 !important;
+        width: 100% !important;
+        text-align: center;
+    }
+    .theme-toggle {
+        width: 100% !important;
+        display: flex;
+        justify-content: center !important;
+        margin-bottom: 0.2rem;
+    }
+    
+}
+
+
 /* section style */
 .hero-text {
     display: flex;
