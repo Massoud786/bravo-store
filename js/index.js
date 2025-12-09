@@ -70,7 +70,8 @@ function stopAutoSlide(){
 }
 
 // Previous Button
-prevBtn.addEventListener("click",() => {
+if (prevBtn && nextBtn){
+prevBtn.addEventListener("click", () => {
     goToSLide(currentIndex -1);
 });
 
@@ -79,7 +80,9 @@ nextBtn.addEventListener("click", () => {
     goToSLide(currentIndex + 1);
 });
 
-// Pause auto-slide when user hovers over carousel 
+}
+if(carousel){
+  // Pause auto-slide when user hovers over carousel 
 carousel.addEventListener("mouseenter",stopAutoSlide);
 carousel.addEventListener("mouseleave",startAutoSLide);
 
@@ -91,6 +94,9 @@ window.addEventListener("resize", () => {
 // kick things off
 goToSLide(0);
 startAutoSLide();
+}
+
+
 
 // ===== Search products from HOME page =====
 document.addEventListener("DOMContentLoaded", () => {
