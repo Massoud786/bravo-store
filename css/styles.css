@@ -1511,6 +1511,41 @@ footer.footer {
     }
 }
 
+/* =========== Login/Register Page ============ */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px;
+}
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.1rem;
+    opacity: 0.7;
+    transition: 0.2s ease;
+}
+.toggle-password:hover {
+    opacity: 1;
+}
+#loginEmail {
+   width: 93.6%;
+}
+#regName,#regEmail {
+    width: 93.6%;
+}
+.error-text {
+    color: red;
+    font-size: 0.9rem;
+}
+
 
 
 

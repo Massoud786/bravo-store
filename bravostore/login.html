@@ -74,21 +74,26 @@
     <section class="auth-card">
         <h1 class="auth-title">Login to BravoStore</h1>
         <p class="auth-subtitle">Welcome back! Please enter your details.</p>
-        <form class="auth-form" action="#" method="post">
+        <form id="loginForm" class="auth-form" action="#" method="post">
             <label>
                 Email
-            <input type="email" name="email" required>
+            <input type="email" name="email" id="loginEmail" required />
+            <p id="emailError" class="error-text"></p>
             </label>
 
             <label>
                 Password
-                <input type="password" name="password" required>
+                <div class="password-wrapper">
+                <input type="password" name="password" id="loginPassword" required />
+                <span class="toggle-password" data-target="loginPassword">👁️</span>
+                </div>
+                <p id="loginPasswordError" class="error-text"></p>
             </label>
             <div class="auth-row">
               <div class="auth-remember">
               <p>Remember me</p>
                 <label class="check-box">
-                  <input type="checkbox" name="remember" class="checkbox">
+                  <input type="checkbox" name="remember" class="checkbox" />
                 </label>
                 </div>
 
@@ -99,6 +104,7 @@
                 New to BravoStore?
                 <a href="register.html" class="auth-link">Create an account</a>
             </p>
+            <p id="loginMessage" class="auth-message"></p>
         </form>
     </section>
 </main>    
@@ -154,5 +160,6 @@
 <script src="../js/index.js"></script>
 <script src="../js/footer.js"></script>
 <script src="../js/products.js"></script>
+<script src="/js/auth.js"></script>
 </body>
 </html>

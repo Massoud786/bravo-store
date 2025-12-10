@@ -75,28 +75,36 @@
 <section class="auth-card">
     <h1 class="auth-title">Create your BravoStore account</h1>
     <p class="auth-subtitle">Join to unlock the best deals every day.</p>
-    <form class="auth-form" action="#" method="post">
+    <form id="registerForm" class="auth-form" action="#" method="post">
         <label>
             Full name
-            <input type="text" name="name" required>
+            <input type="text" name="name" id="regName" required />
         </label>
         <label>
             Email
-            <input type="email" name="email" required>
+            <input type="email" name="email" id="regEmail" required />
+            <p id="emailError" class="error-text"></p>
         </label>
         <label>
             Password
-            <input type="password" name="password" required>
+            <div class="password-wrapper">
+            <input type="password" name="password" id="regPassword" minlength="6" required />
+            <span class="toggle-password" data-target="regPassword">👁️</span>
+            </div>
         </label>
         <label>
             Confirm Password
-            <input type="password" name="confirmPassword" required>
+            <div class="password-wrapper">
+            <input type="password" name="confirmPassword" id="regConfirmPassword" minlength="6" required />
+            <span class="toggle-password" data-target="regConfirmPassword">👁️</span>
+            </div>
         </label>
         <button type="submit" class="btn-primary auth-btn">Register</button>
         <p class="auth-switch">
             Already Have an account?
             <a href="/bravostore/login.html" class="auth-link">Login</a>
         </p>
+        <p id="registerMessage" class="auth-message"></p>
     </form>
 </section>
 </main>
@@ -152,5 +160,6 @@
 <script src="../js/index.js"></script>
 <script src="../js/footer.js"></script>
 <script src="../js/products.js"></script> 
+<script src="/js/auth.js"></script>
 </body>
 </html>
