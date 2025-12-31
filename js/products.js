@@ -4,7 +4,7 @@ const products = [{
     name: "Ultrabook 14\"",
     category: "laptops",
     brand: "BravoTech",
-    price: "999",
+    price: 999,
     rating: 4.7,
     image: "../assets/laptop.png",
     badge: "Best Seller"
@@ -366,7 +366,7 @@ grid.innerHTML = "";
 
 list.forEach((product) => {
     const card = document.createElement("article");
-    card.className = "product-card"
+    card.className = "product-card";
 
     card.innerHTML = `<div class=product-img-wrapper>
     <img src="${product.image}" alt="${product.name}">
@@ -379,9 +379,9 @@ list.forEach((product) => {
     </div>
    
     <div class="product-price">$${product.price}</div>
-    ${product.badge ? `<div class="product-badge">${product.badge}</div ` : ""}
+    ${product.badge ? `<div class="product-badge">${product.badge}</div> ` : ""}
      <div>
-     <button class="add-to-cart-btn">Add to Cart</button> 
+     <button class="add-to-cart-btn" data-id="${product.id}">Add to Cart</button> 
      </div>
     `;
     
@@ -397,7 +397,6 @@ const defaultCategory = (params.get("category")|| "all").toLowerCase();
 const defaultSearch = (params.get("search") || "").toLowerCase();
 let currentCategory = defaultCategory;
 let currentSearch = defaultSearch;
-
 
 // Apply both category + search filter 
 function getFilteredProducts() {
@@ -422,8 +421,52 @@ function getFilteredProducts() {
     renderProducts(getFilteredProducts());
   }  
 
+  // ==== Get cart ====
+  function getCart() {
+    return JSON.parse(localStorage.getItem("cart")) || [];
+  }
+  // ==== Save cart ====
+  function saveCart(cart) {
+    localStorage.setItem("cart",JSON.stringify(cart));
+  }
+  // ===== Add to cart =====
+  function addToCart(productId) {
+    const cart = getCart();
+    const product = products.find(p => p.id === productId);
+    if (!product) return;
+
+    const existing = cart.find(item => item.id === productId);
+
+    if(existing){
+        existing.qty += 1;
+    }
+    else {
+        cart.push ({
+            id: product.id,
+            name: product.name,
+            price: product.price,
+            image: product.image,
+            qty: 1
+        });
+    }
+    saveCart(cart);
+  }
+
+  // ==== Update cart count ====
+  function updateCartCount(){
+    const cart = getCart();
+    const countEl = document.getElementById("cart-count");
+    if(!countEl) return;
+    let count = 0;
+    cart.forEach(item => count += item.qty);
+
+    countEl.textContent = count; 
+  }
+
   // ==== Event Setup ====
   document.addEventListener("DOMContentLoaded", () =>{
+
+    updateCartCount();
     // category filter buttons
     filterButtons.forEach((btn) =>{
         // highlight the button that matches the current category 
@@ -441,6 +484,19 @@ function getFilteredProducts() {
         renderProducts(getFilteredProducts());
     });
    }
+         grid.addEventListener("click", (e) =>{
+            const btn = e.target.closest(".add-to-cart-btn");
+            if (!btn) return;
+            const productId = btn.dataset.id;
+            if(!productId) return;
+            
+            addToCart(productId);
+            updateCartCount();
+           
+            btn.textContent = "Added ✓";
+         setTimeout(() => (btn.textContent = "Add to Cart"), 2000);
+        });
+
     // initial render using filters
     renderProducts(getFilteredProducts());
   });

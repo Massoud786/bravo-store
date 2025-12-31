@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation | BravoStore</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <main class="thankyou-wrap">
+        <div class="panel thankyou-panel">
+            <h1>🎉Thank you for your order!</h1>
+            <p id="orderMeta" class="thankyou-meta"></p>
+
+            <div class="panel thankyou-summary">
+                <h2>Order summary</h2>
+                <div id="orderItems" class="thankyou-items"></div>
+                <hr class="divider">
+                <div class="totals">
+                     <div class="row"><span>Subtotal</span><span id="tSubtotal">$0.00</span></div>
+                     <div class="row"><span>Tax</span><span id="tTax">$0.00</span></div>
+                     <div class="row"><span>Shipping</span><span id="tShipping">$0.00</span></div>
+                     <div class="row total"><span>Total</span><span id="tTotal">$0.00</span></div>
+                </div>
+            </div>
+            <div class="thankyou-actions">
+                <a class="confirmation-btn" href="/bravostore/products.html">Continue Shopping</a>
+                <a class="confirmation-cart-link" href="/bravostore/cart.html">View Cart</a>
+            </div>
+        </div>
+    </main>
+    <script src="/js/confirmation.js"></script>
+</body>
+</html>

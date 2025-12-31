@@ -21,10 +21,18 @@
         <button id="searchBtn"><img src="/assets/search-icon.png" alt="search image"></button>
     </div>
     <div class="header-right">
+      <a href="/bravostore/login.html">
         <button id="loginBtn" class="link-btn">Login</button>
+      </a>
+      <a href="/bravostore/register.html">
         <button id="registerBtn" class="link-btn">Register</button>
-    <div class="cart-icon"><img src="/assets/cart-icon.png" alt="cart image">
+      </a>  
+    <a href="/bravostore/cart.html" class="cart-link">
+    <div class="cart-icon">
+       <span id="cart-count" class="cart-count">0</span>
+      <img src="/assets/cart-icon.png" alt="cart image">
     </div>
+     </a>
  </div>
   </header>
   <nav class="category-nav">
@@ -101,16 +109,16 @@
     <div class="footer-col">
       <h3>Quick Links</h3>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Deals</a></li>
+        <li><a href="/bravostore/index.html">Home</a></li>
+        <li><a href="/bravostore/deals.html">Deals</a></li>
         <li><a href="#">Brands</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="/bravostore/contact-us.html">Contact Us</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h3>Customer Support</h3>
       <ul>
-        <li><a href="#">FAQs</a></li>
+        <li><a href="/bravostore/about-us.html">FAQs</a></li>
         <li><a href="#">Shipping Info</a></li>
         <li><a href="#">Returns & Refunds</a></li>
         <li><a href="#">Warranty</a></li>
@@ -121,8 +129,8 @@
     <div class="footer-col">
       <h3>Shop</h3>
       <ul>
-        <li><a href="#">Laptops</a></li>
-        <li><a href="#">Phones</a></li>
+        <li><a href="/bravostore/products.html?category=laptops">Laptops</a></li>
+        <li><a href="/bravostore/products.html?category=phones">Phones</a></li>
         <li><a href="#">Headphones</a></li>
         <li><a href="#">Gaming</a></li>
       </ul>
@@ -138,5 +146,7 @@
   <script src="../js/index.js"></script>
   <script src="../js/footer.js"></script>
   <script src="../js/products.js"></script>
+  <script src="/js/checkout.js"></script>
+  <script src="/js/cart.js"></script>
 </body>
 </html>
