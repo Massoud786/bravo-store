@@ -750,7 +750,7 @@ footer.footer {
     color: #888;
     font-size: 14px;
   }
- .add-btn {
+ .add-btn{
     font-size: 16px;
     background-color: purple;
     color: white;
@@ -762,6 +762,35 @@ footer.footer {
  }
  .add-btn:hover{
     background-color: darkorchid;
+ }
+ .cart-badge {
+    height: 17px;
+    padding: 0 6px;
+    border-radius: 40px;
+    background: #e11d48;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .cart-icon {
+    text-decoration: none;
+ }
+ .inline-toast {
+    margin-top: 8px;
+    font-size: 17px;
+    margin-right: 20px;
+    font-weight: 900;
+    color: #16a34a;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+ }
+ .inline-toast.show {
+    opacity: 1;
+    transform: translateY(0);
  }
 
     /**************************** Products Page *************************/
