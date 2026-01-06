@@ -57,21 +57,8 @@ This project was created as a **portfolio-ready showcase** to demonstrate front-
 ---
 
 ## 📂 Project Structure
-
-BRAVOSTORE/
+bravostore/
 ├── assets/ # Images and static assets
-│
-├── bravostore/ # Main application pages
-│ ├── about-us.html
-│ ├── cart.html
-│ ├── checkout.html
-│ ├── confirmation.html
-│ ├── contact-us.html
-│ ├── deals.html
-│ ├── index.html
-│ ├── login.html
-│ ├── products.html
-│ └── register.html
 │
 ├── css/
 │ └── styles.css # Global styles
@@ -80,12 +67,22 @@ BRAVOSTORE/
 │ ├── auth.js # Login & registration logic
 │ ├── cart.js # Cart functionality
 │ ├── checkout.js # Checkout & order handling
-│ ├── confirmation.js # Confirmation page logic
-│ ├── deals.js # Deals page & add-to-cart logic
+│ ├── confirmation.js # Order confirmation logic
+│ ├── deals.js # Deals & add-to-cart logic
 │ ├── footer.js # Footer utilities
 │ ├── index.js # Navbar, carousel, theme toggle
-| ├── products.js # Products page logic
-│ └── services.js # Contact page modal logic
+│ └── products.js # Products page logic
+│
+├── index.html # Home page
+├── products.html
+├── deals.html
+├── cart.html
+├── checkout.html
+├── confirmation.html
+├── login.html
+├── register.html
+├── about-us.html
+├── contact-us.html
 │
 ├── LICENSE
 └── README.md
