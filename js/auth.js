@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // redirect to home 
             setTimeout(() => {
                 window.location.href = "index.html";
-            }, 2000);
+            }, 3000);
 
         });
     }
