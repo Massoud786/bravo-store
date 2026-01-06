@@ -6,7 +6,7 @@ const products = [{
     brand: "BravoTech",
     price: 999,
     rating: 4.7,
-    image: "../assets/laptop.png",
+    image: "assets/laptop.png",
     badge: "Best Seller"
 },
 {
@@ -16,7 +16,7 @@ const products = [{
     brand: "BravoGaming",
     price: 1499,
     rating: 4.8,
-    image: "../assets/product-page/desktop.png",
+    image: "assets/product-page/desktop.png",
     badge: "New"
 },
 {
@@ -26,7 +26,7 @@ const products = [{
     brand: "TabPro",
     price: 399,
     rating: 4.4,
-    image: "../assets/product-page/tablet-plus.png",
+    image: "assets/product-page/tablet-plus.png",
     badge: null
 },
 {
@@ -36,7 +36,7 @@ const products = [{
     brand: "Bravo",
     price: 799,
     rating: 4.6,
-    image: "../assets/product-page/phone.png",
+    image: "assets/product-page/phone.png",
     badge: "Hot"
 },
 {
@@ -46,7 +46,7 @@ const products = [{
     brand: "BravoGear",
     price: 29,
     rating: 4.3,
-    image: "../assets/wireless-mouse.png",
+    image: "assets/wireless-mouse.png",
     badge: null
 },
 {
@@ -56,7 +56,7 @@ const products = [{
     brand: "BravoSpeaker",
     price: 20,
     rating: 4.8,
-    image: "../assets/wireless-speaker.png",
+    image: "assets/wireless-speaker.png",
     badge: null
 
 },
@@ -67,7 +67,7 @@ const products = [{
     brand: "Apple",
     price: 999,
     rating: 4.9,
-    image: "../assets/product-page/apple-macbook.png",
+    image: "assets/product-page/apple-macbook.png",
     badge: null
 },
 {
@@ -77,7 +77,7 @@ const products = [{
     brand: "Apple",
     price: 1099,
     rating: 4.7,
-    image: "../assets/product-page/macbook-air.png",
+    image: "assets/product-page/macbook-air.png",
     badge: "New"
 
 },
@@ -88,7 +88,7 @@ const products = [{
     brand: "Lenovo",
     price: 599,
     rating: 4.9,
-    image: "../assets/product-page/lenovo-laptop.png",
+    image: "assets/product-page/lenovo-laptop.png",
     badge: "New"
 },
 {
@@ -98,7 +98,7 @@ const products = [{
     brand: "HP",
     price: 499,
     rating: 4.9,
-    image: "../assets/product-page/HP.png",
+    image: "assets/product-page/HP.png",
     badge: "New"
 },
 {
@@ -108,7 +108,7 @@ const products = [{
     brand: "Sony",
     price: 399,
     rating: 4.3,
-    image: "../assets/product-page/Sony.png",
+    image: "assets/product-page/Sony.png",
     badge: null
 },
 {
@@ -118,7 +118,7 @@ const products = [{
     brand: "Samsung",
     price: 799,
     rating: 5,
-    image: "../assets/product-page/Samsung.png",
+    image: "assets/product-page/Samsung.png",
     badge: null
 },
 {
@@ -128,7 +128,7 @@ const products = [{
     brand: "Samsung",
     price: 599,
     rating: 4.3,
-    image: "../assets/product-page/Samsung-desktop.png",
+    image: "assets/product-page/Samsung-desktop.png",
     badge: "New"
 },
 {
@@ -138,7 +138,7 @@ const products = [{
     brand: "Apple",
     price: 599,
     rating: 4.3,
-    image: "../assets/product-page/Imac.png",
+    image: "assets/product-page/Imac.png",
     badge: null
 },
 {
@@ -148,7 +148,7 @@ const products = [{
     brand: "Dell",
     price: 1399,
     rating: 4.9,
-    image: "../assets/product-page/Dell.png",
+    image: "assets/product-page/Dell.png",
     badge: "New"
 },
 {
@@ -158,7 +158,7 @@ const products = [{
     brand: "Sony",
     price: 1099,
     rating: 4.9,
-    image: "../assets/product-page/HP-desktop.png",
+    image: "assets/product-page/HP-desktop.png",
     badge: null
 },
 {
@@ -168,7 +168,7 @@ const products = [{
     brand: "Samsung",
     price: 499,
     rating: 4.9,
-    image: "../assets/product-page/tablet-andriod.png",
+    image: "assets/product-page/tablet-andriod.png",
     badge: null
 },
 {
@@ -178,7 +178,7 @@ const products = [{
     brand: "Apple",
     price: 799,
     rating: 4.9,
-    image: "../assets/product-page/apple-ipad.png",
+    image: "assets/product-page/apple-ipad.png",
     badge: null
 },
 {
@@ -188,7 +188,7 @@ const products = [{
     brand: "Apple",
     price: 399,
     rating: 4.7,
-    image: "../assets/product-page/ipad-air.png",
+    image: "assets/product-page/ipad-air.png",
     badge: null
 },
 {
@@ -198,7 +198,7 @@ const products = [{
     brand: "Sony",
     price: 299,
     rating: 4.5,
-    image: "../assets/product-page/Sony-ipad.png",
+    image: "assets/product-page/Sony-ipad.png",
     badge: null
 },
 {
@@ -208,7 +208,7 @@ const products = [{
     brand: "Apple",
     price: 1299,
     rating: 5,
-    image: "../assets/product-page/iphone-17ProMax.png",
+    image: "assets/product-page/iphone-17ProMax.png",
     badge: "New"
 },
 {
@@ -218,7 +218,7 @@ const products = [{
     brand: "Apple",
     price: 1099,
     rating: 5,
-    image: "../assets/product-page/iphone-17-pro.png",
+    image: "assets/product-page/iphone-17-pro.png",
     badge: "New"
 },
 {
@@ -228,7 +228,7 @@ const products = [{
     brand: "Apple",
     price: 799,
     rating: 4.8,
-    image: "../assets/product-page/iphone-10.png",
+    image: "assets/product-page/iphone-10.png",
     badge: null
 },
 {
@@ -238,7 +238,7 @@ const products = [{
     brand: "Samsung",
     price: 999,
     rating: 4.8,
-    image: "../assets/product-page/Galaxy.png",
+    image: "assets/product-page/Galaxy.png",
     badge: "New"
 },
 {
@@ -248,7 +248,7 @@ const products = [{
     brand: "Apple",
     price: 299,
     rating: 4.6,
-    image: "../assets/product-page/airpod-one.png",
+    image: "assets/product-page/airpod-one.png",
     badge: null
 },
 {
@@ -258,7 +258,7 @@ const products = [{
     brand: "Samsung",
     price: 599,
     rating: 4.8,
-    image: "../assets/product-page/Galaxy-1.png",
+    image: "assets/product-page/Galaxy-1.png",
     badge: null
 },
 {
@@ -268,7 +268,7 @@ const products = [{
     brand: "Apple",
     price: 50,
     rating: 4.8,
-    image: "../assets/product-page/iphone-case.png",
+    image: "assets/product-page/iphone-case.png",
     badge: null
 },
 {
@@ -278,7 +278,7 @@ const products = [{
     brand: "Apple",
     price: 45,
     rating: 4.8,
-    image: "../assets/product-page/screen-protector.png",
+    image: "assets/product-page/screen-protector.png",
     badge: null
 },
 {
@@ -288,7 +288,7 @@ const products = [{
     brand: "Apple",
     price: 25,
     rating: 4.5,
-    image: "../assets/product-page/iphone-charger.png",
+    image: "assets/product-page/iphone-charger.png",
     badge: null
 },
 {
@@ -298,7 +298,7 @@ const products = [{
     brand: "Apple",
     price: 20,
     rating: 4.1,
-    image: "../assets/product-page/USB-C.png",
+    image: "assets/product-page/USB-C.png",
     badge: null
 },
 {
@@ -308,7 +308,7 @@ const products = [{
     brand: "Samsung",
     price: 30,
     rating: 4.1,
-    image: "../assets/product-page/samsung-c.png",
+    image: "assets/product-page/samsung-c.png",
     badge: null
 },
 {
@@ -318,7 +318,7 @@ const products = [{
     brand: "Samsung",
     price: 50,
     rating: 4.3,
-    image: "../assets/product-page/samsung-cable.png",
+    image: "assets/product-page/samsung-cable.png",
     badge: null
 },
 {
@@ -328,7 +328,7 @@ const products = [{
     brand: "Apple",
     price: 120,
     rating: 4.6,
-    image: "../assets/product-page/samsung-cable.png",
+    image: "assets/product-page/samsung-cable.png",
     badge: null
 },
 {
@@ -338,7 +338,7 @@ const products = [{
     brand: "Apple",
     price: 120,
     rating: 4.6,
-    image: "../assets/product-page/keyboard.png",
+    image: "assets/product-page/keyboard.png",
     badge: null
 }
 ];
