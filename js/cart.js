@@ -13,33 +13,33 @@ function saveCart(cart) {
 function removeItem(id) {
     const cart = getCart();
     const item = cart.findIndex(p => p.id === id);
-    if(item === -1) return;
+    if (item === -1) return;
 
     cart.splice(item, 1);
     saveCart(cart);
     renderCart();
 }
 
- function updateQty(id, delta) {
+function updateQty(id, delta) {
     const cart = getCart();
     const item = cart.find(p => p.id === id);
-    if(!item) return;
+    if (!item) return;
 
     item.qty += delta;
 
-    if(item.qty <= 0) {
-     const index = cart.findIndex(p => p.id === id);
+    if (item.qty <= 0) {
+        const index = cart.findIndex(p => p.id === id);
         cart.splice(index, 1);
-        }
-        saveCart(cart);
-        renderCart();
-        
-    }  
+    }
+    saveCart(cart);
+    renderCart();
+
+}
 function renderCart() {
     const cart = getCart();
     cartItemsEl.innerHTML = "";
 
-    if(cart.length === 0){
+    if (cart.length === 0) {
         cartItemsEl.innerHTML = "<p>Your cart is empty.</p>";
         subtotalEl.textContent = "$0.00";
         taxEl.textContent = "$0.00";
@@ -51,7 +51,7 @@ function renderCart() {
     let subtotal = 0;
     const TAX_RATE = 0.10;
 
-    cart.forEach (item => {
+    cart.forEach(item => {
         const price = Number(item.price) || 0;
         const qty = Number(item.qty) || 1;
 
@@ -77,7 +77,7 @@ function renderCart() {
         <button class="remove-btn" data-id="${item.id}">Remove</button>
         </div>
         `;
-        
+
         cartItemsEl.appendChild(div)
     });
     const tax = +(subtotal * TAX_RATE).toFixed(2);
@@ -89,17 +89,17 @@ function renderCart() {
     shippingEl.textContent = `$${shipping.toFixed(2)}`;
     totalEl.textContent = `$${total.toFixed(2)}`;
 }
-cartItemsEl.addEventListener("click",(e) => {
+cartItemsEl.addEventListener("click", (e) => {
     const removeBtn = e.target.closest(".remove-btn");
-    if(removeBtn) {
+    if (removeBtn) {
         removeItem(removeBtn.dataset.id);
         return;
     }
     const qtyBtn = e.target.closest(".qty-btn");
-    if(qtyBtn) {
-    const id = qtyBtn.dataset.id;
-    const action = qtyBtn.dataset.action;
-    updateQty(id, action === "increase" ? 1 : -1)
-}
+    if (qtyBtn) {
+        const id = qtyBtn.dataset.id;
+        const action = qtyBtn.dataset.action;
+        updateQty(id, action === "increase" ? 1 : -1)
+    }
 });
 renderCart();

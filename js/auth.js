@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.getElementById("loginForm");
 
     // --------- REGISTER ---------
-    if(registerForm) {
+    if (registerForm) {
         const regName = document.getElementById("regName");
         const regEmail = document.getElementById("regEmail");
         const regPassword = document.getElementById("regPassword");
@@ -33,43 +33,43 @@ document.addEventListener("DOMContentLoaded", () => {
             const password = regPassword.value;
             const ConfirmPassword = regConfirmPassword.value;
 
-            if(!emailPattern.test(email)){
-            regEmail.classList.add("error");
-            emailError.textContent = "Please enter a valid email address."
-            return;
-            
-           }
+            if (!emailPattern.test(email)) {
+                regEmail.classList.add("error");
+                emailError.textContent = "Please enter a valid email address."
+                return;
+
+            }
             else {
-            regEmail.classList.remove("error");
-            emailError.textContent = "";
-           }
+                regEmail.classList.remove("error");
+                emailError.textContent = "";
+            }
 
-           if(password != ConfirmPassword) {
-            registerMessage.textContent = " Error : Password do not match.";
-            registerMessage.style.color = "red";
-            registerMessage.style.fontSize = "1.1rem";
-            return;
-           }
-           
-           const users = getUsers();
-           const existing = users.find((u) => u.email === email);
+            if (password != ConfirmPassword) {
+                registerMessage.textContent = " Error : Password do not match.";
+                registerMessage.style.color = "red";
+                registerMessage.style.fontSize = "1.1rem";
+                return;
+            }
 
-           if(existing) {
-            registerMessage.textContent = "Error : An account with this email already exists.";
-            registerMessage.style.color = "red";
-            return;
-           }
-          
-           const newUser = { name, email, password};
-           users.push(newUser);
-           saveUsers(users);
+            const users = getUsers();
+            const existing = users.find((u) => u.email === email);
 
-           registerMessage.textContent = "Account created! Redirecting to login...";
-           registerMessage.style.color = "green";
+            if (existing) {
+                registerMessage.textContent = "Error : An account with this email already exists.";
+                registerMessage.style.color = "red";
+                return;
+            }
 
-           setTimeout(() => {
-            window.location.href = "../bravostore/login.html";
-           }, 2000);
+            const newUser = { name, email, password };
+            users.push(newUser);
+            saveUsers(users);
+
+            registerMessage.textContent = "Account created! Redirecting to login...";
+            registerMessage.style.color = "green";
+
+            setTimeout(() => {
+                window.location.href = "/bravostore/login.html";
+            }, 2000);
         });
     }
 
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function validateLoginEmail() {
         const email = loginEmail.value.trim();
 
-        if(!emailPattern.test(email)) {
+        if (!emailPattern.test(email)) {
             loginEmail.classList.add("error");
             loginEmailError.textContent = "Please enter a valid email address.";
             return false;
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const password = loginPassword.value;
 
         // For login we usually only check non-empty (and maybe length)
-        if(password.length < 8) {
+        if (password.length < 8) {
             loginPassword.classList.add("error");
             loginPasswordError.textContent = "Password must be at least 8 characters."
             return false;
@@ -110,28 +110,28 @@ document.addEventListener("DOMContentLoaded", () => {
         return true;
     }
 
-    if(loginForm) {
-        
+    if (loginForm) {
+
         loginForm.addEventListener("submit", (e) => {
             e.preventDefault();
             // validate email and password
             const isEmailValid = validateLoginEmail();
-            if(!isEmailValid) return;
+            if (!isEmailValid) return;
 
             const isPasswordValid = validateLoginPassword();
-            if(!isPasswordValid) return;
+            if (!isPasswordValid) return;
 
             /*
             e.preventDefault();
             loginMessage.textContent = "";
             */
-        
+
             const email = loginEmail.value.trim().toLowerCase();
             const password = loginPassword.value;
 
             const users = getUsers();
             const user = users.find((u) => u.email === email && u.password === password);
-             if(!user) {
+            if (!user) {
                 loginMessage.textContent = "Error : Invalid email or password.";
                 loginMessage.style.color = "red";
                 loginMessage.style.fontSize = "1.2rem";
@@ -158,7 +158,7 @@ document.querySelectorAll(".toggle-password").forEach(icon => {
         const targetId = icon.getAttribute("data-target");
         const input = document.getElementById(targetId);
 
-        if(input.type === "password") {
+        if (input.type === "password") {
             input.type = "text";
             icon.textContent = "🙈";
         }

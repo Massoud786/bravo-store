@@ -3,7 +3,7 @@ const productItem = document.querySelector('.menu-item.products');
 const productsBtn = document.querySelector('.products-btn');
 
 productsBtn.addEventListener('click', () => {
-    productItem.classList.toggle('open');
+  productItem.classList.toggle('open');
 });
 
 // Toggle Dark or Light mode
@@ -12,23 +12,23 @@ const themeIcon = document.getElementById("theme-icon");
 const body = document.body;
 
 // Load Saved mode 
-if (localStorage.getItem("dark-mode") === "enabled"){
-    body.classList.add("dark-mode");
-    themeToggle.checked = true;
-    themeIcon.textContent = "🌙";
-    
+if (localStorage.getItem("dark-mode") === "enabled") {
+  body.classList.add("dark-mode");
+  themeToggle.checked = true;
+  themeIcon.textContent = "🌙";
+
 }
 themeToggle.addEventListener("change", () => {
-    if(themeToggle.checked){
-        body.classList.add("dark-mode");
-        themeIcon.textContent = "🌙";
-        localStorage.setItem("dark-mode", "enabled");
-    }
-    else {
-        body.classList.remove("dark-mode");
-        themeIcon.textContent = "🌞";
-        localStorage.setItem("dark-mode", "disabled");
-    }
+  if (themeToggle.checked) {
+    body.classList.add("dark-mode");
+    themeIcon.textContent = "🌙";
+    localStorage.setItem("dark-mode", "enabled");
+  }
+  else {
+    body.classList.remove("dark-mode");
+    themeIcon.textContent = "🌞";
+    localStorage.setItem("dark-mode", "disabled");
+  }
 });
 
 // Product Carousel
@@ -44,56 +44,56 @@ const SLIDE_INTERVAL = 2000;
 let autoSLideId = null;
 
 // Go to a specific slide (handles looping)
-function goToSLide(index){
-    const slideWidth = slides[0].clientWidth;
+function goToSLide(index) {
+  const slideWidth = slides[0].clientWidth;
 
-    // keep index in range using module 
-    currentIndex = (index + slides.length) % slides.length;
+  // keep index in range using module 
+  currentIndex = (index + slides.length) % slides.length;
 
-    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
 
 // Strat auto slide
-function startAutoSLide(){
-    stopAutoSlide();
-    autoSLideId = setInterval(() =>{
-        goToSLide(currentIndex + 1);
-    }, SLIDE_INTERVAL);
+function startAutoSLide() {
+  stopAutoSlide();
+  autoSLideId = setInterval(() => {
+    goToSLide(currentIndex + 1);
+  }, SLIDE_INTERVAL);
 }
 
 // Stop auto slide
-function stopAutoSlide(){
-    if(autoSLideId !== null){
-        clearInterval(autoSLideId);
-        autoSLideId = null;
-    }
+function stopAutoSlide() {
+  if (autoSLideId !== null) {
+    clearInterval(autoSLideId);
+    autoSLideId = null;
+  }
 }
 
 // Previous Button
-if (prevBtn && nextBtn){
-prevBtn.addEventListener("click", () => {
-    goToSLide(currentIndex -1);
-});
+if (prevBtn && nextBtn) {
+  prevBtn.addEventListener("click", () => {
+    goToSLide(currentIndex - 1);
+  });
 
-// Next Button 
-nextBtn.addEventListener("click", () => {
+  // Next Button 
+  nextBtn.addEventListener("click", () => {
     goToSLide(currentIndex + 1);
-});
+  });
 
 }
-if(carousel){
+if (carousel) {
   // Pause auto-slide when user hovers over carousel 
-carousel.addEventListener("mouseenter",stopAutoSlide);
-carousel.addEventListener("mouseleave",startAutoSLide);
+  carousel.addEventListener("mouseenter", stopAutoSlide);
+  carousel.addEventListener("mouseleave", startAutoSLide);
 
-// Reculculate position on window resize (keeps slide aligned)
-window.addEventListener("resize", () => {
+  // Reculculate position on window resize (keeps slide aligned)
+  window.addEventListener("resize", () => {
     goToSLide(currentIndex);
-});
+  });
 
-// kick things off
-goToSLide(0);
-startAutoSLide();
+  // kick things off
+  goToSLide(0);
+  startAutoSLide();
 }
 
 

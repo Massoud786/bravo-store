@@ -1,302 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BravoStore</title>
-    <link rel="stylesheet" href="../css/styles.css">
-     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BravoStore</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
   <header class="header">
     <div class="logo">BravoStore</div>
     <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search BravoStore">
-        <button id="searchBtn"><img src="/assets/search-icon.png" alt="search image"></button>
+      <input type="text" id="searchInput" placeholder="Search BravoStore">
+      <button id="searchBtn"><img src="/assets/search-icon.png" alt="search image"></button>
     </div>
     <div class="header-right">
       <a href="/bravostore/login.html">
         <button id="loginBtn" class="link-btn">Login</button>
-        </a>
-        <a href="/bravostore/register.html">
+      </a>
+      <a href="/bravostore/register.html">
         <button id="registerBtn" class="link-btn">Register</button>
-        </a>
-    <div class="cart-icon"><img src="/assets/cart-icon.png" alt="cart image">
+      </a>
+      <div class="cart-icon"><img src="/assets/cart-icon.png" alt="cart image">
+      </div>
     </div>
- </div>
   </header>
   <nav class="category-nav">
-  <ul class="menu">
-    <div class="theme-toggle">
+    <ul class="menu">
+      <div class="theme-toggle">
         <span id="theme-icon">🌞</span>
-      <label class="theme-switch">
-  <input type="checkbox" id="theme-toggle">
-  <span class="slider"></span>
-</label>
+        <label class="theme-switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
       </div>
-    <li class="menu-item products">
-      <button class="products-btn" type="button">
-        <span class="hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <span>Products</span>
-      </button>
-      <div class="products-dropdown">
-        <a href="/bravostore/products.html?category=laptops">Laptops</a>
-        <a href="/bravostore/products.html?category=desktops">Desktops</a>
-        <a href="/bravostore/products.html?category=tablets">Tablets</a>
-        <a href="/bravostore/products.html?category=phones">Phones</a>
-        <a href="/bravostore/products.html?category=accessories">Accessories</a>
-      </div>
-    </li>
-    <li class="menu-item"><a href="/bravostore/index.html">Home</a>
-    </li>
-    <li class="menu-item"><a href="/bravostore/deals.html">Deals</a>
-    </li>
-    <li class="menu-item"><a href="#why-bravostore">Services</a>
-    </li>
-    <li class="menu-item"><a href="#brands">Brands</a>
-    </li>
-    <li class="menu-item"><a href="contact-us.html">Contact Us</a>
-    </li>
-    <li class="menu-item"><a href="about-us.html">About Us</a></li>
-  </ul>
-</nav>
-<main>
-  <div class="hero-text">
+      <li class="menu-item products">
+        <button class="products-btn" type="button">
+          <span class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>Products</span>
+        </button>
+        <div class="products-dropdown">
+          <a href="/bravostore/products.html?category=laptops">Laptops</a>
+          <a href="/bravostore/products.html?category=desktops">Desktops</a>
+          <a href="/bravostore/products.html?category=tablets">Tablets</a>
+          <a href="/bravostore/products.html?category=phones">Phones</a>
+          <a href="/bravostore/products.html?category=accessories">Accessories</a>
+        </div>
+      </li>
+      <li class="menu-item"><a href="/bravostore/index.html">Home</a>
+      </li>
+      <li class="menu-item"><a href="/bravostore/deals.html">Deals</a>
+      </li>
+      <li class="menu-item"><a href="#why-bravostore">Services</a>
+      </li>
+      <li class="menu-item"><a href="#brands">Brands</a>
+      </li>
+      <li class="menu-item"><a href="/bravostore/contact-us.html">Contact Us</a>
+      </li>
+      <li class="menu-item"><a href="/bravostore/about-us.html">About Us</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="hero-text">
       <h1>Welcome to BravoStore</h1>
       <p>Your trusted online marketplace for electronics, accessories, and great deals every day.</p>
     </div>
-  <section class="product-carousels">
-  <h2>Featured Products</h2>
+    <section class="product-carousels">
+      <h2>Featured Products</h2>
 
-  <div class="carousel">
-    <!-- LEFT ARROW: sibling of .carousel-track -->
-    <button class="carousel-btn prev-btn">
-      <img src="/assets/arrow-left.png" alt="previous">
-    </button>
+      <div class="carousel">
+        <!-- LEFT ARROW: sibling of .carousel-track -->
+        <button class="carousel-btn prev-btn">
+          <img src="/assets/arrow-left.png" alt="previous">
+        </button>
 
-    <!-- ONLY this moves left/right -->
-    <div class="carousel-track">
-      <div class="carousel-item">
-        <img src="/assets/laptop.png" alt="work laptop">
-        <h3>Laptop</h3>
-        <p>High-performance laptop for work and play.</p>
+        <!-- ONLY this moves left/right -->
+        <div class="carousel-track">
+          <div class="carousel-item">
+            <img src="/assets/laptop.png" alt="work laptop">
+            <h3>Laptop</h3>
+            <p>High-performance laptop for work and play.</p>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/assets/headphone.png" alt="wireless headphone">
+            <h3>Wireless Headphones</h3>
+            <p>Noise-cancelling sound for music and calls.</p>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/assets/watch.png" alt="smart watch">
+            <h3>Smartwatch</h3>
+            <p>Track your health and stay connected.</p>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/assets/airpod-image.png" alt="Airpods Pro">
+            <h3>Airpods Pro (2nd Generation)</h3>
+            <p>Experience immersive sound, enhanced noise cancellation, and all-day comfort—perfect for music, calls,
+              and everyday use.</p>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/assets/bag.png" alt="Laptop Bag">
+            <h3>Premium Leather Laptop Bag</h3>
+            <p>A handcrafted leather laptop bag designed for durability, style, and everyday productivity—perfect for
+              work, school, or travel.</p>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/assets/calculator.png" alt="calculator image">
+            <h3>Sharp Scientific Calculator (EL-501X)</h3>
+            <p>A reliable scientific calculator featuring essential functions for math, engineering, and science
+              courses.</p>
+          </div>
+        </div>
+
+        <!-- RIGHT ARROW: sibling of .carousel-track -->
+        <button class="carousel-btn next-btn">
+          <img src="/assets/arrow-right.png" alt="next">
+        </button>
+      </div>
+    </section>
+
+    <!-- Shop by Category -->
+    <section class="section-wrapper" id="shop-by-category">
+      <h2 class="section-title">Shop by Category</h2>
+
+      <div class="card-grid categories-grid">
+        <article class="category-card">
+          <div class="category-icon">💻</div>
+          <h3>Laptops &amp; Computers</h3>
+          <p>Explore powerful laptops for work and play.</p>
+        </article>
+
+        <article class="category-card">
+          <div class="category-icon">📱</div>
+          <h3>Smartphones &amp; Tablets</h3>
+          <p>Shop the latest smartphones and tablets.</p>
+        </article>
+
+        <article class="category-card">
+          <div class="category-icon">🎧</div>
+          <h3>Audio &amp; Headphones</h3>
+          <p>Find quality audio devices and accessories.</p>
+        </article>
+
+        <article class="category-card">
+          <div class="category-icon">🎮</div>
+          <h3>Gaming &amp; Consoles</h3>
+          <p>Discover the latest in gaming and consoles.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Best Sellers in Electronics -->
+    <section class="section-wrapper" id="best-sellers">
+      <h2 class="section-title">Best Sellers in Electronics</h2>
+
+      <div class="card-grid products-grid">
+        <article class="product-card">
+          <img src="/assets/laptop.png" alt="Laptop Pro" class="product-img">
+          <div class="product-info">
+            <h3>Laptop Pro</h3>
+            <p class="stars">★★★★★ <span class="reviews">(134)</span></p>
+            <p class="product-desc">Popular for students and professionals.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="/assets/headphone.png" alt="Noise Canceling Headphones" class="product-img">
+          <div class="product-info">
+            <h3>Noise-Canceling Headphones</h3>
+            <p class="stars">★★★★★ <span class="reviews">(88)</span></p>
+            <p class="product-desc">Great sound &amp; battery life.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="/assets/TV-one.png" alt="4K Monitor" class="product-img">
+          <div class="product-info">
+            <h3>4K Monitor</h3>
+            <p class="stars">★★★★★ <span class="reviews">(41)</span></p>
+            <p class="product-desc">Brilliant display quality.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="/assets/speaker-image.png" alt="Bluetooth Speaker" class="product-img">
+          <div class="product-info">
+            <h3>Bluetooth Speaker</h3>
+            <p class="stars">★★★★☆ <span class="reviews">(24)</span></p>
+            <p class="product-desc">Portable &amp; powerful sound.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Shop by BravoStore (Brands) -->
+    <section class="section-wrapper" id="brands">
+      <h2 class="section-title">Shop by BravoStore</h2>
+      <div class="brands-row">
+        <button class="brand-pill">apple</button>
+        <button class="brand-pill">SAMSUNG</button>
+        <button class="brand-pill">dell</button>
+        <button class="brand-pill">hp</button>
+        <button class="brand-pill">SONY</button>
+      </div>
+    </section>
+
+    <!-- Why Shop at BravoStore -->
+    <section class="section-wrapper" id="why-bravostore">
+      <h2 class="section-title">Why Shop at BravoStore?</h2>
+
+      <div class="card-grid why-grid">
+        <article class="why-card">
+          <span class="why-icon">🚚</span>
+          <h3>Fast Shipping</h3>
+          <p>Quick, reliable delivery on all orders.</p>
+        </article>
+
+        <article class="why-card">
+          <span class="why-icon">🔐</span>
+          <h3>Secure Payments</h3>
+          <p>Encrypted checkout to protect your data.</p>
+        </article>
+
+        <article class="why-card">
+          <span class="why-icon">🛡️</span>
+          <h3>1-Year Warranty</h3>
+          <p>Coverage on most electronics you buy.</p>
+        </article>
+
+        <article class="why-card">
+          <span class="why-icon">💬</span>
+          <h3>Tech Support</h3>
+          <p>Friendly help when you need it.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col footer-brand">
+        <h2 class="footer-logo">BravoStore</h2>
+        <p>Your trusted online marketplace for electronics, accessories, and great deals every day.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/bravostore/index.html">Home</a></li>
+          <li><a href="/bravostore/deals.html">Deals</a></li>
+          <li><a href="#brands">Brands</a></li>
+          <li><a href="/bravostore/contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Customer Support</h3>
+        <ul>
+          <li><a href="/bravostore/about-us.html">FAQs</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+          <li><a href="/bravostore/about-us.html">Warranty</a></li>
+        </ul>
       </div>
 
-      <div class="carousel-item">
-        <img src="/assets/headphone.png" alt="wireless headphone">
-        <h3>Wireless Headphones</h3>
-        <p>Noise-cancelling sound for music and calls.</p> 
-      </div>
-
-      <div class="carousel-item">
-        <img src="/assets/watch.png" alt="smart watch">
-        <h3>Smartwatch</h3>
-        <p>Track your health and stay connected.</p>
-      </div>
-
-      <div class="carousel-item">
-        <img src="/assets/airpod-image.png" alt="Airpods Pro">
-        <h3>Airpods Pro (2nd Generation)</h3>
-        <p>Experience immersive sound, enhanced noise cancellation, and all-day comfort—perfect for music, calls, and everyday use.</p>
-      </div>
-
-      <div class="carousel-item">
-        <img src="/assets/bag.png" alt="Laptop Bag">
-        <h3>Premium Leather Laptop Bag</h3>
-        <p>A handcrafted leather laptop bag designed for durability, style, and everyday productivity—perfect for work, school, or travel.</p> 
-      </div>
-
-      <div class="carousel-item">
-        <img src="/assets/calculator.png" alt="calculator image">
-        <h3>Sharp Scientific Calculator (EL-501X)</h3>
-        <p>A reliable scientific calculator featuring essential functions for math, engineering, and science courses.</p>
+      <!-- Column 4: Shop Categories -->
+      <div class="footer-col">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="/bravostore/products.html?category=laptops">Laptops</a></li>
+          <li><a href="/bravostore/products.html?category=phones">Phones</a></li>
+          <li><a href="#">Headphones</a></li>
+          <li><a href="#">Gaming</a></li>
+        </ul>
       </div>
     </div>
 
-    <!-- RIGHT ARROW: sibling of .carousel-track -->
-    <button class="carousel-btn next-btn">
-      <img src="/assets/arrow-right.png" alt="next">
-    </button>
-  </div>
-</section>
-
-<!-- Shop by Category -->
-<section class="section-wrapper" id="shop-by-category">
-  <h2 class="section-title">Shop by Category</h2>
-
-  <div class="card-grid categories-grid">
-    <article class="category-card">
-      <div class="category-icon">💻</div>
-      <h3>Laptops &amp; Computers</h3>
-      <p>Explore powerful laptops for work and play.</p>
-    </article>
-
-    <article class="category-card">
-      <div class="category-icon">📱</div>
-      <h3>Smartphones &amp; Tablets</h3>
-      <p>Shop the latest smartphones and tablets.</p>
-    </article>
-
-    <article class="category-card">
-      <div class="category-icon">🎧</div>
-      <h3>Audio &amp; Headphones</h3>
-      <p>Find quality audio devices and accessories.</p>
-    </article>
-
-    <article class="category-card">
-      <div class="category-icon">🎮</div>
-      <h3>Gaming &amp; Consoles</h3>
-      <p>Discover the latest in gaming and consoles.</p>
-    </article>
-  </div>
-</section>
-
-<!-- Best Sellers in Electronics -->
-<section class="section-wrapper" id="best-sellers">
-  <h2 class="section-title">Best Sellers in Electronics</h2>
-
-  <div class="card-grid products-grid">
-    <article class="product-card">
-      <img src="../assets/laptop.png" alt="Laptop Pro" class="product-img">
-      <div class="product-info">
-        <h3>Laptop Pro</h3>
-        <p class="stars">★★★★★ <span class="reviews">(134)</span></p>
-        <p class="product-desc">Popular for students and professionals.</p>
-      </div>
-    </article>
-
-    <article class="product-card">
-      <img src="../assets/headphone.png" alt="Noise Canceling Headphones" class="product-img">
-      <div class="product-info">
-        <h3>Noise-Canceling Headphones</h3>
-        <p class="stars">★★★★★ <span class="reviews">(88)</span></p>
-        <p class="product-desc">Great sound &amp; battery life.</p>
-      </div>
-    </article>
-
-    <article class="product-card">
-      <img src="../assets/TV-one.png" alt="4K Monitor" class="product-img">
-      <div class="product-info">
-        <h3>4K Monitor</h3>
-        <p class="stars">★★★★★ <span class="reviews">(41)</span></p>
-        <p class="product-desc">Brilliant display quality.</p>
-      </div>
-    </article>
-
-    <article class="product-card">
-      <img src="../assets/speaker-image.png" alt="Bluetooth Speaker" class="product-img">
-      <div class="product-info">
-        <h3>Bluetooth Speaker</h3>
-        <p class="stars">★★★★☆ <span class="reviews">(24)</span></p>
-        <p class="product-desc">Portable &amp; powerful sound.</p>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- Shop by BravoStore (Brands) -->
-<section class="section-wrapper" id="brands">
-  <h2 class="section-title">Shop by BravoStore</h2>
-  <div class="brands-row">
-    <button class="brand-pill">apple</button>
-    <button class="brand-pill">SAMSUNG</button>
-    <button class="brand-pill">dell</button>
-    <button class="brand-pill">hp</button>
-    <button class="brand-pill">SONY</button>
-  </div>
-</section>
-
-<!-- Why Shop at BravoStore -->
-<section class="section-wrapper" id="why-bravostore">
-  <h2 class="section-title">Why Shop at BravoStore?</h2>
-
-  <div class="card-grid why-grid">
-    <article class="why-card">
-      <span class="why-icon">🚚</span>
-      <h3>Fast Shipping</h3>
-      <p>Quick, reliable delivery on all orders.</p>
-    </article>
-
-    <article class="why-card">
-      <span class="why-icon">🔐</span>
-      <h3>Secure Payments</h3>
-      <p>Encrypted checkout to protect your data.</p>
-    </article>
-
-    <article class="why-card">
-      <span class="why-icon">🛡️</span>
-      <h3>1-Year Warranty</h3>
-      <p>Coverage on most electronics you buy.</p>
-    </article>
-
-    <article class="why-card">
-      <span class="why-icon">💬</span>
-      <h3>Tech Support</h3>
-      <p>Friendly help when you need it.</p>
-    </article>
-  </div>
-</section>
-</main>
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-col footer-brand">
-      <h2 class="footer-logo">BravoStore</h2>
-      <p>Your trusted online marketplace for electronics, accessories, and great deals every day.</p>
-      <div class="footer-socials">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-      </div>
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> BravoStore. All rights reserved.</p>
     </div>
-    <div class="footer-col">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="deals.html">Deals</a></li>
-        <li><a href="#brands">Brands</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h3>Customer Support</h3>
-      <ul>
-        <li><a href="about-us.html">FAQs</a></li>
-        <li><a href="#">Shipping Info</a></li>
-        <li><a href="#">Returns & Refunds</a></li>
-        <li><a href="about-us.html">Warranty</a></li>
-      </ul>
-    </div>
-
-    <!-- Column 4: Shop Categories -->
-    <div class="footer-col">
-      <h3>Shop</h3>
-      <ul>
-        <li><a href="/bravostore/products.html?category=laptops">Laptops</a></li>
-        <li><a href="/bravostore/products.html?category=phones">Phones</a></li>
-        <li><a href="#">Headphones</a></li>
-        <li><a href="#">Gaming</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Bottom bar -->
-  <div class="footer-bottom">
-    <p>© <span id="year"></span> BravoStore. All rights reserved.</p>
-  </div>
-</footer>
-<script src="../js/index.js"></script>
-<script src="../js/footer.js"></script>
-<script src="../js/products.js"></script>
+  </footer>
+  <script src="/js/index.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/products.js"></script>
 </body>
+
 </html>

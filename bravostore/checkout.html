@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
     <main class="checkout-wrap">
         <section class="checkout-left">
@@ -57,37 +59,41 @@
                 </div>
                 <h2>Payment</h2>
 
-      <div class="checkout-payment-icons" aria-label="Accepted payment methods">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="American Express">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Discover_Card_logo.svg" alt="Discover">
-      </div>
+                <div class="checkout-payment-icons" aria-label="Accepted payment methods">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg"
+                        alt="American Express">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Discover_Card_logo.svg"
+                        alt="Discover">
+                </div>
 
-      <label class="checkout-label">
-        Card Number *
-        <input type="text" class="checkout-input" id="cardNumber" inputmode="numeric" placeholder="1234 5678 9012 3456" required />
-      </label>
+                <label class="checkout-label">
+                    Card Number *
+                    <input type="text" class="checkout-input" id="cardNumber" inputmode="numeric"
+                        placeholder="1234 5678 9012 3456" required />
+                </label>
 
-      <div class="grid3">
-        <label class="checkout-label">
-          Exp (MM/YY) *
-          <input type="text" class="checkout-input" id="exp" placeholder="MM/YY" required />
-        </label>
-        <label class="checkout-label">
-          CVV *
-          <input type="password" class="checkout-input" id="cvv" inputmode="numeric" placeholder="123" required />
-        </label>
-        <label class="checkout-label">
-          Name on Card *
-          <input type="text" class="checkout-input" id="cardName" required />
-        </label>
-      </div>
+                <div class="grid3">
+                    <label class="checkout-label">
+                        Exp (MM/YY) *
+                        <input type="text" class="checkout-input" id="exp" placeholder="MM/YY" required />
+                    </label>
+                    <label class="checkout-label">
+                        CVV *
+                        <input type="password" class="checkout-input" id="cvv" inputmode="numeric" placeholder="123"
+                            required />
+                    </label>
+                    <label class="checkout-label">
+                        Name on Card *
+                        <input type="text" class="checkout-input" id="cardName" required />
+                    </label>
+                </div>
 
-      <button class="place-order" type="submit">Place Order</button>
-      <p class="fineprint">
-        By placing your order, you agree to our Terms & Privacy Policy.
-      </p>
+                <button class="place-order" type="submit">Place Order</button>
+                <p class="fineprint">
+                    By placing your order, you agree to our Terms & Privacy Policy.
+                </p>
             </form>
         </section>
         <aside class="checkout-right">
@@ -96,15 +102,15 @@
                 <div id="cartItems" class="checkout-cart-items"></div>
                 <hr class="divider">
                 <div class="totals">
-                <div class="row"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
-             <div class="row"><span>Tax</span><span id="tax">$0.00</span></div>
-             <div class="row"><span>Shipping</span><span id="shipping">$0.00</span></div>
-             <div class="row total"><span>Total</span><span id="total">$0.00</span></div>
+                    <div class="row"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+                    <div class="row"><span>Tax</span><span id="tax">$0.00</span></div>
+                    <div class="row"><span>Shipping</span><span id="shipping">$0.00</span></div>
+                    <div class="row total"><span>Total</span><span id="total">$0.00</span></div>
                 </div>
             </div>
         </aside>
     </main>
+    <script src="/js/checkout.js"></script>
 </body>
-<script src="/js/checkout.js"></script>
 
 </html>

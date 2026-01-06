@@ -1,5 +1,5 @@
 // Modal pop 
-document.addEventListener("DOMContentLoaded", () =>{
+document.addEventListener("DOMContentLoaded", () => {
     const contactForm = document.querySelector(".contact-form");
     const modalOvelay = document.getElementById("contact-modal");
     const modalCloseBtn = document.querySelector(".modal-close");
@@ -19,27 +19,27 @@ document.addEventListener("DOMContentLoaded", () =>{
             contactForm.reset();
         });
     }
-    function closeModal(){
+    function closeModal() {
         modalOvelay.classList.remove("is-visible");
     }
-    if(modalCloseBtn) {
-        modalCloseBtn.addEventListener("click",closeModal);
+    if (modalCloseBtn) {
+        modalCloseBtn.addEventListener("click", closeModal);
     }
-    if(modalOkBtn) {
+    if (modalOkBtn) {
         modalOkBtn.addEventListener("click", closeModal);
     }
 
     // close if user clicks outside the modal box
-    if(modalOvelay) {
-        modalOvelay.addEventListener("click", (e) =>{
-            if(e.target === modalOvelay){
+    if (modalOvelay) {
+        modalOvelay.addEventListener("click", (e) => {
+            if (e.target === modalOvelay) {
                 closeModal();
             }
         });
     }
     // close on Escape key
-    document.addEventListener("keydown", (e) =>{
-        if(e.key === "Escape" && modalOvelay.classList.contains("is-visible")) {
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modalOvelay.classList.contains("is-visible")) {
             closeModal();
         }
     });

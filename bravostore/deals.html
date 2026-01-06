@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deals | BravoStore</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header class="header">
+  <header class="header">
     <div class="logo">BravoStore</div>
     <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search BravoStore">
-        <button id="searchBtn"><img src="/assets/search-icon.png" alt="search image"></button>
+      <input type="text" id="searchInput" placeholder="Search BravoStore">
+      <button id="searchBtn"><img src="/assets/search-icon.png" alt="search image"></button>
     </div>
     <div class="header-right">
       <a href="/bravostore/login.html">
         <button id="loginBtn" class="link-btn">Login</button>
-        </a>
-        <a href="/bravostore/register.html">
+      </a>
+      <a href="/bravostore/register.html">
         <button id="registerBtn" class="link-btn">Register</button>
-        </a>
-    <a class="cart-icon" href="/bravostore/cart.html">
-      <span id="cartCount" class="cart-badge">0</span>
-      <img src="/assets/cart-icon.png" alt="cart image"> 
-    </a>
- </div>
+      </a>
+      <a class="cart-icon" href="/bravostore/cart.html">
+        <span id="cartCount" class="cart-badge">0</span>
+        <img src="/assets/cart-icon.png" alt="cart image">
+      </a>
+    </div>
   </header>
   <nav class="category-nav">
     <ul class="menu">
       <div class="theme-toggle">
         <span id="theme-icon">🌞</span>
-      <label class="theme-switch">
-  <input type="checkbox" id="theme-toggle">
-  <span class="slider"></span>
-</label>
+        <label class="theme-switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
       </div>
-      
+
       <li class="menu-item products">
-          <button class="products-btn" type="button">
-        <span class="hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <span>Products</span>
-      </button>
-      <div class="products-dropdown">
-        <a href="/bravostore/products.html?category=laptops">Laptops</a>
-        <a href="/bravostore/products.html?category=desktops">Desktops</a>
-        <a href="/bravostore/products.html?category=tablets">Tablets</a>
-        <a href="/bravostore/products.html?category=phones">Phones</a>
-        <a href="/bravostore/products.html?category=accessories">Accessories</a>
-      </div>
+        <button class="products-btn" type="button">
+          <span class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>Products</span>
+        </button>
+        <div class="products-dropdown">
+          <a href="/bravostore/products.html?category=laptops">Laptops</a>
+          <a href="/bravostore/products.html?category=desktops">Desktops</a>
+          <a href="/bravostore/products.html?category=tablets">Tablets</a>
+          <a href="/bravostore/products.html?category=phones">Phones</a>
+          <a href="/bravostore/products.html?category=accessories">Accessories</a>
+        </div>
       </li>
       <li class="menu-item">
         <a href="/bravostore/index.html">Home</a>
@@ -66,15 +65,15 @@
         <a href="/bravostore/deals.html">Deals</a>
       </li>
       <li class="menu-item"><a href="#services">Services</a>
-    </li>
-    <li class="menu-item"><a href="#brands">Brands</a>
-    </li>
-    <li class="menu-item"><a href="contact-us.html">Contact Us</a>
-    </li>
-    <li class="menu-item"><a href="about-us.html">About Us</a></li>
+      </li>
+      <li class="menu-item"><a href="#brands">Brands</a>
+      </li>
+      <li class="menu-item"><a href="/bravostore/contact-us.html">Contact Us</a>
+      </li>
+      <li class="menu-item"><a href="/bravostore/about-us.html">About Us</a></li>
     </ul>
   </nav>
-    <main class="deals-page">
+  <main class="deals-page">
     <h1>Exclusive Deals Just for You</h1>
 
     <!--- Top Deals --->
@@ -83,378 +82,338 @@
       <p class="deals-text">Our biggest and most popular discounts.</p>
       <div class="deals-container">
         <div class="deals-product">
-        <img src="/assets/phone-image-one.png" alt="iphone image">
-        <h3>Iphone Nova X - 128GB (Unlocked) - Silver</h3> 
-            <p class="price">🔥 Top Deal Price: $699.99</p>
-            <p class="old-price"> Regular Price: $849.99</p>
-            <p class="price">💸 You Save: $150</p>
-        <button class="add-btn add-to-cart-btn" data-id="iphone-nova-x-128-silver" 
-              data-name="Iphone Nova X - 128GB (Unlocked) - Silver" data-price="699.99"
-              data-image="/assets/phone-image-one.png">
-              Add to Cart
-        </button>
-        </div>
-      <div class="deals-product">
-        <img src="/assets/phone-image-two.png" alt="Samsung phone image">
-        <h3>Samsung Galaxy S24 - 128GB (Gray)</h3> 
-            <p class="price">🔥 Top Deal Price: $749.99</p>
-            <p class="old-price"> Regular Price: $899.99</p>
-            <p class="price">💸 You Save: $150</p>
-        <button class="add-btn add-to-cart-btn" data-id="samsung-galaxy-s24-128-gray"
-        data-name="Samsung Galaxy S24 - 128GB (Gray)" data-price="749.99"
-        data-image="/assets/phone-image-two.png">
-        Add to Cart
-      </button>
-        </div>
-      <div class="deals-product">
-        <img src="/assets/phone-image-three.png" alt="Iphone 16 Pro Max image">
-        <h3>Iphone 15 Pro Max - 258GB (Titanium Silver)</h3> 
-            <p class="price">🔥 Top Deal Price: $1099.99</p>
-            <p class="old-price"> Regular Price: $1249.99</p>
-            <p class="price">💸 You Save: $150</p>
-        <button class="add-btn add-to-cart-btn" data-id="iphone-15-pro-max-258-titanium-silver"
-        data-name="Iphone 15 Pro Max - 258GB (Titanium Silver)" data-price="1099.99"
-        data-image="/assets/phone-image-three.png">
-          Add to Cart
-        </button>
-        </div>
-       <div class="deals-product">
-        <img src="/assets/airpod-image-one.png" alt="Airpod image">
-        <h3>Airpod Wireless Earbuds (2nd Gen)</h3> 
-            <p class="price">🔥 Top Deal Price: $119.99</p>
-            <p class="old-price"> Regular Price: $159.99</p>
-            <p class="price">💸 You Save: $40</p>
-        <button class="add-btn add-to-cart-btn" data-id="airpod-wireless-earbuds-2nd-gen"
-        data-name="Airpod Wireless Earbuds (2nd Gen)" data-price="119.99"
-        data-image="/assets/airpod-image-one.png">
-        Add to Cart</button>
-        </div>
-         <div class="deals-product">
-        <img src="/assets/apple-watch.png" alt="Apple watch image">
-        <h3>SmartFit Pro Watch - Black Edition</h3> 
-            <p class="price">🔥 Top Deal Price: $149.99</p>
-            <p class="old-price"> Regular Price: $199.99</p>
-            <p class="price">💸 You Save: $50</p>
-        <button class="add-btn add-to-cart-btn" data-id="smartfit-pro-watch-black-edition"
-        data-name="SmartFit Pro Watch-Black Edition"
-        data-price="149.99"
-        data-image="/assets/apple-watch.png">
-        Add to Cart</button>
-        </div>
-         <div class="deals-product">
-        <img src="/assets/dell.png" alt="Dell Laptop image">
-        <h3>Dell FlexBook 14 - Ultra Slim Laptop</h3> 
-            <p class="price">🔥 Top Deal Price: $649.99</p>
-            <p class="old-price"> Regular Price: $799.99</p>
-            <p class="price">💸 You Save: $150</p>
-        <button class="add-btn add-to-cart-btn" data-id="dell-flex-book-14-ultra-slim-laptop"
-        data-name="Dell FlexBook 14 - Ultra Slim Laptop"
-        data-price="649.99"
-        data-image="/assets/dell.png">
-        Add to Cart</button>
+          <img src="/assets/phone-image-one.png" alt="iphone image">
+          <h3>Iphone Nova X - 128GB (Unlocked) - Silver</h3>
+          <p class="price">🔥 Top Deal Price: $699.99</p>
+          <p class="old-price"> Regular Price: $849.99</p>
+          <p class="price">💸 You Save: $150</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="iphone-nova-x-128-silver"
+            data-name="Iphone Nova X - 128GB (Unlocked) - Silver" data-price="699.99"
+            data-image="/assets/phone-image-one.png">
+            Add to Cart
+          </button>
         </div>
         <div class="deals-product">
-        <img src="/assets/laptop-bag.png" alt="Laptop Bag image">
-        <h3>ProShield Laptop Bag - 15.6" (Black)</h3> 
-            <p class="price">🔥 Top Deal Price: $39.99</p>
-            <p class="old-price"> Regular Price: $59.99</p>
-            <p class="price">💸 You Save: $20</p>
-        <button class="add-btn add-to-cart-btn" 
-        data-id="pro-shield-laptop-bag-15.6-black"
-        data-name="ProShield Laptop Bag - 15.6 (Black)"
-        data-image="/assets/laptop-bag.png">
-        Add to Cart</button>
+          <img src="/assets/phone-image-two.png" alt="Samsung phone image">
+          <h3>Samsung Galaxy S24 - 128GB (Gray)</h3>
+          <p class="price">🔥 Top Deal Price: $749.99</p>
+          <p class="old-price"> Regular Price: $899.99</p>
+          <p class="price">💸 You Save: $150</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="samsung-galaxy-s24-128-gray"
+            data-name="Samsung Galaxy S24 - 128GB (Gray)" data-price="749.99" data-image="/assets/phone-image-two.png">
+            Add to Cart
+          </button>
         </div>
-         <div class="deals-product">
-        <img src="/assets/TV-one.png" alt="Samsung TV image">
-        <h3>Samsung 55" 4K Ultra HD Smart TV (Crystal UHD)</h3> 
-            <p class="price">🔥 Top Deal Price: $449.99</p>
-            <p class="old-price"> Regular Price: $559.99</p>
-            <p class="price">💸 You Save: $150</p>
-        <button class="add-btn add-to-cart-btn" data-id="samsung-55-4k-ultra-hd-smart-tv-crystal-uhd"
-        data-name="Samsung 55 4k Ultra HD Smart TV (Crystal UHD)"
-        data-price="449.99"
-        data-image="/assets/TV-one.png">
-        Add to Cart</button>
+        <div class="deals-product">
+          <img src="/assets/phone-image-three.png" alt="Iphone 16 Pro Max image">
+          <h3>Iphone 15 Pro Max - 258GB (Titanium Silver)</h3>
+          <p class="price">🔥 Top Deal Price: $1099.99</p>
+          <p class="old-price"> Regular Price: $1249.99</p>
+          <p class="price">💸 You Save: $150</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="iphone-15-pro-max-258-titanium-silver"
+            data-name="Iphone 15 Pro Max - 258GB (Titanium Silver)" data-price="1099.99"
+            data-image="/assets/phone-image-three.png">
+            Add to Cart
+          </button>
         </div>
-         <div class="deals-product">
-        <img src="/assets/Macbook Air.png" alt="Apple Air image">
-        <h3>MacBook Air 13" - M2 Chip (Silver)</h3> 
-            <p class="price">🔥 Top Deal Price: $999.99</p>
-            <p class="old-price"> Regular Price: $1199.99</p>
-            <p class="price">💸 You Save: $200</p>
-        <button class="add-btn add-to-cart-btn" data-id="macbook-air-13-m2-chip-silver"
-        data-name="Macbook Air 13 - M2 Chip (Silver)"
-        data-price="999.99"
-        data-image="/assets/Macbook Air.png">
-        Add to Cart</button>
+        <div class="deals-product">
+          <img src="/assets/airpod-image-one.png" alt="Airpod image">
+          <h3>Airpod Wireless Earbuds (2nd Gen)</h3>
+          <p class="price">🔥 Top Deal Price: $119.99</p>
+          <p class="old-price"> Regular Price: $159.99</p>
+          <p class="price">💸 You Save: $40</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="airpod-wireless-earbuds-2nd-gen"
+            data-name="Airpod Wireless Earbuds (2nd Gen)" data-price="119.99" data-image="/assets/airpod-image-one.png">
+            Add to Cart</button>
         </div>
-         <div class="deals-product">
-        <img src="/assets/keyboard.png" alt="Keyboard image">
-        <h3>BravoKey Mechanical Keyboard - RGB Edition</h3> 
-            <p class="price">🔥 Top Deal Price: $80.99</p>
-            <p class="old-price"> Regular Price: $120.99</p>
-            <p class="price">💸 You Save: $40</p>
-        <button class="add-btn add-to-cart-btn" data-id="bravo-key-mechanical-keyboard-rgb-edition"
-        data-name="BravoKey Mechanical Keyboard - RGB Edition"
-        data-price="80.99"
-        data-image="/assets/keyboard.png">Add to Cart</button>
+        <div class="deals-product">
+          <img src="/assets/apple-watch.png" alt="Apple watch image">
+          <h3>SmartFit Pro Watch - Black Edition</h3>
+          <p class="price">🔥 Top Deal Price: $149.99</p>
+          <p class="old-price"> Regular Price: $199.99</p>
+          <p class="price">💸 You Save: $50</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="smartfit-pro-watch-black-edition"
+            data-name="SmartFit Pro Watch-Black Edition" data-price="149.99" data-image="/assets/apple-watch.png">
+            Add to Cart</button>
         </div>
-         <div class="deals-product">
-        <img src="/assets/mouse.png" alt="Mouse image">
-        <h3>NovaStrike RGB Gaming Mouse - Precision Edition</h3> 
-            <p class="price">🔥 Top Deal Price: $59.99</p>
-            <p class="old-price"> Regular Price: $89.99</p>
-            <p class="price">💸 You Save: $30</p>
-        <button class="add-btn add-to-cart-btn" data-id="nova-strike-rgb-gaming-mouse-precision-edition"
-        data-name="NovaStrike RGB Gaming Mouse - Precision Edition"
-        data-price="59.99"
-        data-image="/assets/mouse.png">Add to Cart</button>
+        <div class="deals-product">
+          <img src="/assets/dell.png" alt="Dell Laptop image">
+          <h3>Dell FlexBook 14 - Ultra Slim Laptop</h3>
+          <p class="price">🔥 Top Deal Price: $649.99</p>
+          <p class="old-price"> Regular Price: $799.99</p>
+          <p class="price">💸 You Save: $150</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="dell-flex-book-14-ultra-slim-laptop"
+            data-name="Dell FlexBook 14 - Ultra Slim Laptop" data-price="649.99" data-image="/assets/dell.png">
+            Add to Cart</button>
+        </div>
+        <div class="deals-product">
+          <img src="/assets/laptop-bag.png" alt="Laptop Bag image">
+          <h3>ProShield Laptop Bag - 15.6" (Black)</h3>
+          <p class="price">🔥 Top Deal Price: $39.99</p>
+          <p class="old-price"> Regular Price: $59.99</p>
+          <p class="price">💸 You Save: $20</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="pro-shield-laptop-bag-15.6-black"
+            data-name="ProShield Laptop Bag - 15.6 (Black)" data-image="/assets/laptop-bag.png">
+            Add to Cart</button>
+        </div>
+        <div class="deals-product">
+          <img src="/assets/TV-one.png" alt="Samsung TV image">
+          <h3>Samsung 55" 4K Ultra HD Smart TV (Crystal UHD)</h3>
+          <p class="price">🔥 Top Deal Price: $449.99</p>
+          <p class="old-price"> Regular Price: $559.99</p>
+          <p class="price">💸 You Save: $150</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="samsung-55-4k-ultra-hd-smart-tv-crystal-uhd"
+            data-name="Samsung 55 4k Ultra HD Smart TV (Crystal UHD)" data-price="449.99"
+            data-image="/assets/TV-one.png">
+            Add to Cart</button>
+        </div>
+        <div class="deals-product">
+          <img src="/assets/Macbook Air.png" alt="Apple Air image">
+          <h3>MacBook Air 13" - M2 Chip (Silver)</h3>
+          <p class="price">🔥 Top Deal Price: $999.99</p>
+          <p class="old-price"> Regular Price: $1199.99</p>
+          <p class="price">💸 You Save: $200</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="macbook-air-13-m2-chip-silver"
+            data-name="Macbook Air 13 - M2 Chip (Silver)" data-price="999.99" data-image="/assets/Macbook Air.png">
+            Add to Cart</button>
+        </div>
+        <div class="deals-product">
+          <img src="/assets/keyboard.png" alt="Keyboard image">
+          <h3>BravoKey Mechanical Keyboard - RGB Edition</h3>
+          <p class="price">🔥 Top Deal Price: $80.99</p>
+          <p class="old-price"> Regular Price: $120.99</p>
+          <p class="price">💸 You Save: $40</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="bravo-key-mechanical-keyboard-rgb-edition"
+            data-name="BravoKey Mechanical Keyboard - RGB Edition" data-price="80.99"
+            data-image="/assets/keyboard.png">Add to Cart</button>
+        </div>
+        <div class="deals-product">
+          <img src="/assets/mouse.png" alt="Mouse image">
+          <h3>NovaStrike RGB Gaming Mouse - Precision Edition</h3>
+          <p class="price">🔥 Top Deal Price: $59.99</p>
+          <p class="old-price"> Regular Price: $89.99</p>
+          <p class="price">💸 You Save: $30</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="nova-strike-rgb-gaming-mouse-precision-edition"
+            data-name="NovaStrike RGB Gaming Mouse - Precision Edition" data-price="59.99"
+            data-image="/assets/mouse.png">Add to Cart</button>
         </div>
       </div>
-      
+
     </section>
 
     <!-- Weekly Deals -->
     <section class="deals-section">
       <h2 class="deals-text">Weekly Deals</h2>
       <p class="deals-text">New weekly savings updated every Sunday.</p>
-       <div class="deals-container">
+      <div class="deals-container">
         <div class="deals-product">
           <img src="/assets/speaker-image.png" alt="Speaker image">
           <h3>Echo Dot Smart Speaker (5th Gen)</h3>
-           <p class="price">🔥 Weekly Deal Price: $29.99</p>
-            <p class="old-price"> Regular Price: $49.99</p>
-            <p class="price">💸 You Save: $20</p>
-        <button class="add-btn add-to-cart-btn" data-id="echo-dot-smart-speaker-5th-gen"
-        data-name="Echo Dot Smart Speaker (5th Gen)"
-        data-price="29.99"
-        data-image="/assets/speaker-image.png">Add to Cart</button>
+          <p class="price">🔥 Weekly Deal Price: $29.99</p>
+          <p class="old-price"> Regular Price: $49.99</p>
+          <p class="price">💸 You Save: $20</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="echo-dot-smart-speaker-5th-gen"
+            data-name="Echo Dot Smart Speaker (5th Gen)" data-price="29.99" data-image="/assets/speaker-image.png">Add
+            to Cart</button>
         </div>
-         <div class="deals-product">
+        <div class="deals-product">
           <img src="/assets/wireless-speaker.png" alt="Wireless Speaker image">
           <h3>PulseBeat Portable Bluetooth Speaker</h3>
-           <p class="price">🔥 Weekly Deal Price: $19.99</p>
-            <p class="old-price"> Regular Price: $39.99</p>
-            <p class="price">💸 You Save: $15</p>
-        <button class="add-btn add-to-cart-btn"
-        data-id="pulse-beat-portable-bluetooth-speaker"
-        data-name="PulseBeat Portable Bluetooth Speaker"
-        data-price="19.99"
-        data-image="/assets/wireless-speaker.png">Add to Cart</button>
+          <p class="price">🔥 Weekly Deal Price: $19.99</p>
+          <p class="old-price"> Regular Price: $39.99</p>
+          <p class="price">💸 You Save: $15</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="pulse-beat-portable-bluetooth-speaker"
+            data-name="PulseBeat Portable Bluetooth Speaker" data-price="19.99"
+            data-image="/assets/wireless-speaker.png">Add to Cart</button>
         </div>
-         <div class="deals-product">
+        <div class="deals-product">
           <img src="/assets/charger.png" alt="USB Charger image">
           <h3>Fast USB-C Wall Charger - 30W</h3>
-           <p class="price">🔥 Weekly Deal Price: $12.99</p>
-            <p class="old-price"> Regular Price: $24.99</p>
-            <p class="price">💸 You Save: $12</p>
-        <button class="add-btn add-to-cart-btn" 
-        data-id="fast-use-c-wall-charger-30w"
-        data-name="Fast USB - C Wall Charger - 30W"
-        data-price="12.99"
-        data-image="/assets/charger.png">
-        Add to Cart</button>
+          <p class="price">🔥 Weekly Deal Price: $12.99</p>
+          <p class="old-price"> Regular Price: $24.99</p>
+          <p class="price">💸 You Save: $12</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="fast-use-c-wall-charger-30w"
+            data-name="Fast USB - C Wall Charger - 30W" data-price="12.99" data-image="/assets/charger.png">
+            Add to Cart</button>
         </div>
-         <div class="deals-product">
+        <div class="deals-product">
           <img src="/assets/bulb.png" alt="LED light bulb image">
           <h3>Smart LED Light Bulb</h3>
-           <p class="price">🔥 Weekly Deal Price: $14.99</p>
-            <p class="old-price"> Regular Price: $24.99</p>
-            <p class="price">💸 You Save: $10</p>
-        <button class="add-btn add-to-cart-btn" 
-        data-id="smart-led-light-bulb"
-        data-name="Smart LED Light Bulb"
-        data-price="14.99"
-        data-image="/assets/bulb.png">
-        Add to Cart</button>
+          <p class="price">🔥 Weekly Deal Price: $14.99</p>
+          <p class="old-price"> Regular Price: $24.99</p>
+          <p class="price">💸 You Save: $10</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="smart-led-light-bulb" data-name="Smart LED Light Bulb"
+            data-price="14.99" data-image="/assets/bulb.png">
+            Add to Cart</button>
         </div>
         <div class="deals-product">
           <img src="/assets/wireless-mouse.png" alt="Wireless mouse image">
           <h3>Logitech Wireless Mouse - Silver Click Edition</h3>
-           <p class="price">🔥 Weekly Deal Price: $24.99</p>
-            <p class="old-price"> Regular Price: $39.99</p>
-            <p class="price">💸 You Save: $15</p>
-        <button class="add-btn add-to-cart-btn"
-        data-id="logitech-wireless-mouse-silver-click-edition"
-        data-name="Logitech Wireless Mouse - Silver Click Edition"
-        data-price="24.99"
-        data-image="/assets/wireless-mouse.png">
-        Add to Cart</button>
+          <p class="price">🔥 Weekly Deal Price: $24.99</p>
+          <p class="old-price"> Regular Price: $39.99</p>
+          <p class="price">💸 You Save: $15</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="logitech-wireless-mouse-silver-click-edition"
+            data-name="Logitech Wireless Mouse - Silver Click Edition" data-price="24.99"
+            data-image="/assets/wireless-mouse.png">
+            Add to Cart</button>
         </div>
         <div class="deals-product">
           <img src="/assets/samsung-buds.png" alt="Wireless earbuds image">
           <h3>Samsung Galaxy Buds Lite - True Wireless Earbuds</h3>
-           <p class="price">🔥 Weekly Deal Price: $49.99</p>
-            <p class="old-price"> Regular Price: $79.99</p>
-            <p class="price">💸 You Save: $30</p>
-        <button class="add-btn add-to-cart-btn" data-id="samsung-galaxy-buds-lite-true-wireless-earbuds"
-        data-name="Samsung Galaxy Buds Lite - True Wireless Earbuds"
-        data-price="49.99"
-        data-image="/assets/samsung-buds.png">
-        Add to Cart</button>
+          <p class="price">🔥 Weekly Deal Price: $49.99</p>
+          <p class="old-price"> Regular Price: $79.99</p>
+          <p class="price">💸 You Save: $30</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="samsung-galaxy-buds-lite-true-wireless-earbuds"
+            data-name="Samsung Galaxy Buds Lite - True Wireless Earbuds" data-price="49.99"
+            data-image="/assets/samsung-buds.png">
+            Add to Cart</button>
         </div>
         <div class="deals-product">
           <img src="/assets/chromebook.png" alt="Chromebook image">
           <h3>HP Chromebook 11" - Compact & Fast for Everyday Use</h3>
-           <p class="price">🔥 Weekly Deal Price: $139.99</p>
-            <p class="old-price"> Regular Price: $199.99</p>
-            <p class="price">💸 You Save: $60</p>
-        <button class="add-btn add-to-cart-btn"
-        data-id="hp-chromebook11-compact-&-fast-for-everyday-use"
-        data-name="HP Chromebook 11 - Compact & Fast for Everyday Use"
-        data-price="139.99"
-        data-image="/assets/chromebook.png">Add to Cart</button>
+          <p class="price">🔥 Weekly Deal Price: $139.99</p>
+          <p class="old-price"> Regular Price: $199.99</p>
+          <p class="price">💸 You Save: $60</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="hp-chromebook11-compact-&-fast-for-everyday-use"
+            data-name="HP Chromebook 11 - Compact & Fast for Everyday Use" data-price="139.99"
+            data-image="/assets/chromebook.png">Add to Cart</button>
         </div>
         <div class="deals-product">
           <img src="/assets/webcam.png" alt="Webcam image">
           <h3>Lenovo 1080p HD Webcam - Auto-Focus Edition</h3>
-           <p class="price">🔥 Weekly Deal Price: $39.99</p>
-            <p class="old-price"> Regular Price: $59.99</p>
-            <p class="price">💸 You Save: $20</p>
-        <button class="add-btn add-to-cart-btn" data-id="lenovo-1080p-hd-webcam-auto-focus-edition"
-        data-name="Lenovo 1080p HD Webcam - Auto-Focus Edition"
-        data-price="39.99"
-        data-image="/assets/webcam.png">
-        Add to Cart</button>
+          <p class="price">🔥 Weekly Deal Price: $39.99</p>
+          <p class="old-price"> Regular Price: $59.99</p>
+          <p class="price">💸 You Save: $20</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="lenovo-1080p-hd-webcam-auto-focus-edition"
+            data-name="Lenovo 1080p HD Webcam - Auto-Focus Edition" data-price="39.99" data-image="/assets/webcam.png">
+            Add to Cart</button>
         </div>
-       </div>
+      </div>
     </section>
 
     <!-- Daily Deals -->
     <section class="deals-section">
       <h2 class="deals-text">Daily Deals</h2>
       <p class="deals-text">Exclusive discounts available today only.</p>
-       <div class="deals-container">
+      <div class="deals-container">
         <div class="deals-product">
-          <img src="/assets//iphone 17 Pro max.png" alt="Iphone 17 pro max case image">
+          <img src="/assets/iphone 17 Pro max.png" alt="Iphone 17 pro max case image">
           <h3>iphone 17 Pro Max - Orange Silicone Protective Case</h3>
-           <p class="price">🔥 Daily Deal Price: $14.99</p>
-            <p class="old-price"> Regular Price: $22.99</p>
-            <p class="price">💸 You Save: $8</p>
-        <button class="add-btn add-to-cart-btn"
-        data-id="iphone-17-pro-max-orange-silicone-protective-case"
-        data-name="iphone 17 Pro Max - Orange Silicone Protective Case"
-        data-price="14.99"
-        data-image="/assets//iphone 17 Pro max.png">Add to Cart</button>
+          <p class="price">🔥 Daily Deal Price: $14.99</p>
+          <p class="old-price"> Regular Price: $22.99</p>
+          <p class="price">💸 You Save: $8</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="iphone-17-pro-max-orange-silicone-protective-case"
+            data-name="iphone 17 Pro Max - Orange Silicone Protective Case" data-price="14.99"
+            data-image="/assets/iphone 17 Pro max.png">Add to Cart</button>
         </div>
         <div class="deals-product">
           <img src="/assets/phone-holder.png" alt="Phone holder image">
           <h3>Universal Car Phone Holder - Suction Mount</h3>
-           <p class="price">🔥 Daily Deal Price: $11.99</p>
-            <p class="old-price"> Regular Price: $19.99</p>
-            <p class="price">💸 You Save: $8</p>
-        <button class="add-btn add-to-cart-btn"
-        data-id="universal-car-phone-holder-suction-mount"
-        data-name="Universal Car Phone Holder - Suction Mount"
-        data-price="11.99"
-        data-image="/assets/phone-holder.png">Add to Cart</button>
+          <p class="price">🔥 Daily Deal Price: $11.99</p>
+          <p class="old-price"> Regular Price: $19.99</p>
+          <p class="price">💸 You Save: $8</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="universal-car-phone-holder-suction-mount"
+            data-name="Universal Car Phone Holder - Suction Mount" data-price="11.99"
+            data-image="/assets/phone-holder.png">Add to Cart</button>
         </div>
         <div class="deals-product">
           <img src="/assets/laptop-cooling-pad.png" alt="Laptop cooling pad image">
           <h3>Laptop Cooling Pad - Quad Fan LED Edition</h3>
-           <p class="price">🔥 Daily Deal Price: $19.99</p>
-            <p class="old-price"> Regular Price: $29.99</p>
-            <p class="price">💸 You Save: $10</p>
-        <button class="add-btn add-to-cart-btn"
-        data-id="laptop-cooling-pad-quad-fan-led-edition"
-        data-name="Laptop Cooling Pad - Quad Fan LED Edition"
-        data-price="19.99"
-        data-image="/assets/laptop-cooling-pad.png">Add to Cart</button>
+          <p class="price">🔥 Daily Deal Price: $19.99</p>
+          <p class="old-price"> Regular Price: $29.99</p>
+          <p class="price">💸 You Save: $10</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="laptop-cooling-pad-quad-fan-led-edition"
+            data-name="Laptop Cooling Pad - Quad Fan LED Edition" data-price="19.99"
+            data-image="/assets/laptop-cooling-pad.png">Add to Cart</button>
         </div>
         <div class="deals-product">
           <img src="/assets/screen-protector.png" alt="Screen protector image">
           <h3>Tempered Glass Screen Protector - 9H Hardness</h3>
-           <p class="price">🔥 Daily Deal Price: $7.99</p>
-            <p class="old-price"> Regular Price: $14.99</p>
-            <p class="price">💸 You Save: $7</p>
-        <button class="add-btn add-to-cart-btn" 
-        data-id="tempered-glass-screen-protector-9h-hardness"
-        data-name="Tempered Glass Screen Protector - 9H Hardness"
-        data-price="7.99"
-        data-image="/assets/screen-protector.png">Add to Cart</button>
+          <p class="price">🔥 Daily Deal Price: $7.99</p>
+          <p class="old-price"> Regular Price: $14.99</p>
+          <p class="price">💸 You Save: $7</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="tempered-glass-screen-protector-9h-hardness"
+            data-name="Tempered Glass Screen Protector - 9H Hardness" data-price="7.99"
+            data-image="/assets/screen-protector.png">Add to Cart</button>
         </div>
         <div class="deals-product">
           <img src="/assets/USB-Port-Hub.png" alt="USB port hub image">
           <h3>USB 4-Port Hub - Compact & High-Speed</h3>
-           <p class="price">🔥 Daily Deal Price: $8.99</p>
-            <p class="old-price"> Regular Price: $14.99</p>
-            <p class="price">💸 You Save: $6</p>
-        <button class="add-btn add-to-cart-btn"
-        data-id="usb-4-point-hub-compact-&-high-speed"
-        data-name="USB 4 - Port Hub - Compact & High Speed"
-        data-price="8.99"
-        data-image="/assets/USB-Port-Hub.png">
-        Add to Cart</button>
+          <p class="price">🔥 Daily Deal Price: $8.99</p>
+          <p class="old-price"> Regular Price: $14.99</p>
+          <p class="price">💸 You Save: $6</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="usb-4-point-hub-compact-&-high-speed"
+            data-name="USB 4 - Port Hub - Compact & High Speed" data-price="8.99" data-image="/assets/USB-Port-Hub.png">
+            Add to Cart</button>
         </div>
         <div class="deals-product">
           <img src="/assets/case.png" alt="Iphone 16 Pro Max case">
           <h3>Iphone 16 Pro Max - Clear Protective Case</h3>
-           <p class="price">🔥 Daily Deal Price: $12.99</p>
-            <p class="old-price"> Regular Price: $19.99</p>
-            <p class="price">💸 You Save: $7</p>
-        <button class="add-btn add-to-cart-btn"
-        data-id="iphone-16-pro-max-clear-protective-case"
-        data-name="Iphone 16 Pro Max - Clear Protective Case"
-        data-price="12.99"
-        data-image="/assets/case.png">Add to Cart</button>
+          <p class="price">🔥 Daily Deal Price: $12.99</p>
+          <p class="old-price"> Regular Price: $19.99</p>
+          <p class="price">💸 You Save: $7</p>
+          <button class="deals-add-btn deals-add-to-cart-btn" data-id="iphone-16-pro-max-clear-protective-case"
+            data-name="Iphone 16 Pro Max - Clear Protective Case" data-price="12.99" data-image="/assets/case.png">Add
+            to Cart</button>
         </div>
-       </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-col footer-brand">
-      <h2 class="footer-logo">BravoStore</h2>
-      <p>Your trusted online marketplace for electronics, accessories, and great deals every day.</p>
-      <div class="footer-socials">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <div class="footer-container">
+      <div class="footer-col footer-brand">
+        <h2 class="footer-logo">BravoStore</h2>
+        <p>Your trusted online marketplace for electronics, accessories, and great deals every day.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
       </div>
-    </div>
-    <div class="footer-col">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="/bravostore/index.html">Home</a></li>
-        <li><a href="/bravostore/deals.html">Deals</a></li>
-        <li><a href="#">Brands</a></li>
-        <li><a href="/bravostore/contact-us.html">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h3>Customer Support</h3>
-      <ul>
-        <li><a href="/bravostore/about-us.html">FAQs</a></li>
-        <li><a href="#">Shipping Info</a></li>
-        <li><a href="#">Returns & Refunds</a></li>
-        <li><a href="#">Warranty</a></li>
-      </ul>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/bravostore/index.html">Home</a></li>
+          <li><a href="/bravostore/deals.html">Deals</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="/bravostore/contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Customer Support</h3>
+        <ul>
+          <li><a href="/bravostore/about-us.html">FAQs</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+          <li><a href="#">Warranty</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Shop Categories -->
+      <div class="footer-col">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="/bravostore/products.html?category=laptops">Laptops</a></li>
+          <li><a href="/bravostore/products.html?category=phones">Phones</a></li>
+          <li><a href="#">Headphones</a></li>
+          <li><a href="#">Gaming</a></li>
+        </ul>
+      </div>
+
     </div>
 
-    <!-- Column 4: Shop Categories -->
-    <div class="footer-col">
-      <h3>Shop</h3>
-      <ul>
-        <li><a href="/bravostore/products.html?category=laptops">Laptops</a></li>
-        <li><a href="/bravostore/products.html?category=phones">Phones</a></li>
-        <li><a href="#">Headphones</a></li>
-        <li><a href="#">Gaming</a></li>
-      </ul>
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> BravoStore. All rights reserved.</p>
     </div>
+  </footer>
+  <script src="/js/index.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/products.js"></script>
+  <script src="/js/deals.js"></script>
+  
 
-  </div>
-
-  <!-- Bottom bar -->
-  <div class="footer-bottom">
-    <p>© <span id="year"></span> BravoStore. All rights reserved.</p>
-  </div>
-</footer>
-  <script src="../js/index.js"></script>
-  <script src="../js/footer.js"></script>
-  <script src="../js/products.js"></script>
-  <script src="../js/deals.js"></script>
- 
 </body>
+
 </html>

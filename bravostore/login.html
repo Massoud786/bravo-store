@@ -1,165 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | BravoStore</title>
-    <link rel="stylesheet" href="../css/styles.css">
-     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | BravoStore</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header class="header">
+  <header class="header">
     <div class="logo">BravoStore</div>
     <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search BravoStore">
-        <button id="searchBtn"><img src="/assets/search-icon.png" alt="search image"></button>
+      <input type="text" id="searchInput" placeholder="Search BravoStore">
+      <button id="searchBtn"><img src="/assets/search-icon.png" alt="search image"></button>
     </div>
     <div class="header-right">
-        <a href="../bravostore/login.html">
+      <a href="/bravostore/login.html">
         <button id="loginBtn" class="link-btn">Login</button>
-         </a>
-         <a href="/bravostore/register.html">
+      </a>
+      <a href="/bravostore/register.html">
         <button id="registerBtn" class="link-btn">Register</button>
+      </a>
+      <a href="/bravostore/cart.html">
+      <div class="cart-icon"><img src="/assets/cart-icon.png" alt="cart image">
         </a>
-    <div class="cart-icon"><img src="/assets/cart-icon.png" alt="cart image">
+      </div>
     </div>
- </div>
   </header>
   <nav class="category-nav">
-  <ul class="menu">
-    <div class="theme-toggle">
+    <ul class="menu">
+      <div class="theme-toggle">
         <span id="theme-icon">🌞</span>
-      <label class="theme-switch">
-  <input type="checkbox" id="theme-toggle">
-  <span class="slider"></span>
-</label>
+        <label class="theme-switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
       </div>
-    <li class="menu-item products">
-      <button class="products-btn" type="button">
-        <span class="hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <span>Products</span>
-      </button>
-      <div class="products-dropdown">
-        <a href="/bravostore/products.html?category=laptops">Laptops</a>
-        <a href="/bravostore/products.html?category=desktops">Desktops</a>
-        <a href="/bravostore/products.html?category=tablets">Tablets</a>
-        <a href="/bravostore/products.html?category=phones">Phones</a>
-        <a href="/bravostore/products.html?category=accessories">Accessories</a>
-      </div>
-    </li>
-    <li class="menu-item"><a href="/bravostore/index.html">Home</a>
-    </li>
-    <li class="menu-item"><a href="/bravostore/deals.html">Deals</a>
-    </li>
-    <li class="menu-item"><a href="#why-bravostore">Services</a>
-    </li>
-    <li class="menu-item"><a href="#brands">Brands</a>
-    </li>
-    <li class="menu-item"><a href="contact-us.html">Contact Us</a>
-    </li>
-    <li class="menu-item"><a href="about-us.html">About Us</a></li>
-  </ul>
-</nav>
-<main class="auth-wrapper">
+      <li class="menu-item products">
+        <button class="products-btn" type="button">
+          <span class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>Products</span>
+        </button>
+        <div class="products-dropdown">
+          <a href="/bravostore/products.html?category=laptops">Laptops</a>
+          <a href="/bravostore/products.html?category=desktops">Desktops</a>
+          <a href="/bravostore/products.html?category=tablets">Tablets</a>
+          <a href="/bravostore/products.html?category=phones">Phones</a>
+          <a href="/bravostore/products.html?category=accessories">Accessories</a>
+        </div>
+      </li>
+      <li class="menu-item"><a href="/bravostore/index.html">Home</a>
+      </li>
+      <li class="menu-item"><a href="/bravostore/deals.html">Deals</a>
+      </li>
+      <li class="menu-item"><a href="#why-bravostore">Services</a>
+      </li>
+      <li class="menu-item"><a href="#brands">Brands</a>
+      </li>
+      <li class="menu-item"><a href="/bravostore/contact-us.html">Contact Us</a>
+      </li>
+      <li class="menu-item"><a href="/bravostore/about-us.html">About Us</a></li>
+    </ul>
+  </nav>
+  <main class="auth-wrapper">
     <section class="auth-card">
-        <h1 class="auth-title">Login to BravoStore</h1>
-        <p class="auth-subtitle">Welcome back! Please enter your details.</p>
-        <form id="loginForm" class="auth-form" action="#" method="post">
-            <label>
-                Email
-            <input type="email" name="email" id="loginEmail" required />
-            <p id="emailError" class="error-text"></p>
-            </label>
+      <h1 class="auth-title">Login to BravoStore</h1>
+      <p class="auth-subtitle">Welcome back! Please enter your details.</p>
+      <form id="loginForm" class="auth-form" action="#" method="post">
+        <label>
+          Email
+          <input type="email" name="email" id="loginEmail" required />
+          <p id="emailError" class="error-text"></p>
+        </label>
 
-            <label>
-                Password
-                <div class="password-wrapper">
-                <input type="password" name="password" id="loginPassword" required />
-                <span class="toggle-password" data-target="loginPassword">👁️</span>
-                </div>
-                <p id="loginPasswordError" class="error-text"></p>
+        <label>
+          Password
+          <div class="password-wrapper">
+            <input type="password" name="password" id="loginPassword" required />
+            <span class="toggle-password" data-target="loginPassword">👁️</span>
+          </div>
+          <p id="loginPasswordError" class="error-text"></p>
+        </label>
+        <div class="auth-row">
+          <div class="auth-remember">
+            <p>Remember me</p>
+            <label class="check-box">
+              <input type="checkbox" name="remember" class="checkbox" />
             </label>
-            <div class="auth-row">
-              <div class="auth-remember">
-              <p>Remember me</p>
-                <label class="check-box">
-                  <input type="checkbox" name="remember" class="checkbox" />
-                </label>
-                </div>
+          </div>
 
-                <a href="#" class="auth-link-small">Forgot password ?</a>
-            </div>
-            <button type="submit" class="btn-primary auth-btn">Login</button>
-            <p class="auth-switch">
-                New to BravoStore?
-                <a href="register.html" class="auth-link">Create an account</a>
-            </p>
-            <p id="loginMessage" class="auth-message"></p>
-        </form>
+          <a href="#" class="auth-link-small">Forgot password ?</a>
+        </div>
+        <button type="submit" class="btn-primary auth-btn">Login</button>
+        <p class="auth-switch">
+          New to BravoStore?
+          <a href="/bravostore/register.html" class="auth-link">Create an account</a>
+        </p>
+        <p id="loginMessage" class="auth-message"></p>
+      </form>
     </section>
-</main>    
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-col footer-brand">
-      <h2 class="footer-logo">BravoStore</h2>
-      <p>Your trusted online marketplace for electronics, accessories, and great deals every day.</p>
-      <div class="footer-socials">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col footer-brand">
+        <h2 class="footer-logo">BravoStore</h2>
+        <p>Your trusted online marketplace for electronics, accessories, and great deals every day.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
       </div>
-    </div>
-    <div class="footer-col">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="deals.html">Deals</a></li>
-        <li><a href="#brands">Brands</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h3>Customer Support</h3>
-      <ul>
-        <li><a href="about-us.html">FAQs</a></li>
-        <li><a href="#">Shipping Info</a></li>
-        <li><a href="#">Returns & Refunds</a></li>
-        <li><a href="about-us.html">Warranty</a></li>
-      </ul>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/bravostore/index.html">Home</a></li>
+          <li><a href="/bravostore/deals.html">Deals</a></li>
+          <li><a href="#brands">Brands</a></li>
+          <li><a href="/bravostore/contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Customer Support</h3>
+        <ul>
+          <li><a href="/bravostore/about-us.html">FAQs</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+          <li><a href="/bravostore/about-us.html">Warranty</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Shop Categories -->
+      <div class="footer-col">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="/bravostore/products.html?category=laptops">Laptops</a></li>
+          <li><a href="/bravostore/products.html?category=phones">Phones</a></li>
+          <li><a href="#">Headphones</a></li>
+          <li><a href="#">Gaming</a></li>
+        </ul>
+      </div>
+
     </div>
 
-    <!-- Column 4: Shop Categories -->
-    <div class="footer-col">
-      <h3>Shop</h3>
-      <ul>
-        <li><a href="/bravostore/products.html?category=laptops">Laptops</a></li>
-        <li><a href="/bravostore/products.html?category=phones">Phones</a></li>
-        <li><a href="#">Headphones</a></li>
-        <li><a href="#">Gaming</a></li>
-      </ul>
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> BravoStore. All rights reserved.</p>
     </div>
-
-  </div>
-
-  <!-- Bottom bar -->
-  <div class="footer-bottom">
-    <p>© <span id="year"></span> BravoStore. All rights reserved.</p>
-  </div>
-</footer>
-<script src="../js/index.js"></script>
-<script src="../js/footer.js"></script>
-<script src="../js/products.js"></script>
-<script src="/js/auth.js"></script>
+  </footer>
+  <script src="/js/index.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/products.js"></script>
+  <script src="/js/auth.js"></script>
 </body>
+
 </html>

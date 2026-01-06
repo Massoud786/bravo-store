@@ -6,14 +6,14 @@ function saveCart(cart) {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 function updateCartBadge() {
-    const cart = getCart();
-    const count = cart.reduce((sum,item) => sum + (Number(item.qty) || 1), 0);
+  const cart = getCart();
+  const count = cart.reduce((sum, item) => sum + (Number(item.qty) || 1), 0);
 
-    const badge = document.getElementById("cartCount");
-    if(!badge) return;
+  const badge = document.getElementById("cartCount");
+  if (!badge) return;
 
-    badge.textContent = count;
-    badge.style.display = count > 0 ? "flex" : "none";
+  badge.textContent = count;
+  badge.style.display = count > 0 ? "flex" : "none";
 }
 
 function addToCart(product) {
@@ -54,7 +54,7 @@ function showInlineToast(button, message) {
 }
 
 document.addEventListener("click", (e) => {
-  const btn = e.target.closest(".add-to-cart-btn");
+  const btn = e.target.closest(".deals-add-to-cart-btn");
   if (!btn) return;
 
   addToCart({
@@ -65,4 +65,8 @@ document.addEventListener("click", (e) => {
   });
 
   showInlineToast(btn, "Added to cart 🛒");
+});
+// New refresh badge after page reloaded
+document.addEventListener("DOMContentLoaded", () => {
+  updateCartBadge();
 });

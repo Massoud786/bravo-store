@@ -335,10 +335,18 @@ body.dark-mode .products-dropdown a:hover{
         justify-content: center !important;
         margin-bottom: 0.2rem;
     }
+    .hero-text {
+      margin-left: 30px;
+    }
+    .hero-text h1 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .hero-text p {
+        font-size: 20px;
+    }
     
 }
-
-
 /* section style */
 .hero-text {
     display: flex;
@@ -750,7 +758,7 @@ footer.footer {
     color: #888;
     font-size: 14px;
   }
- .add-btn{
+ .deals-add-btn{
     font-size: 16px;
     background-color: purple;
     color: white;
