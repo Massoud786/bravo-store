@@ -179,7 +179,7 @@ else {
     //alert(`Order placed successfyllu! Order ID: ${orderId}`);
 
     // Redirect to thank you page
-    window.location.href = "/bravostore/confirmation.html";
+    window.location.href = "confirmation.html";
   });
 
   renderSummary();

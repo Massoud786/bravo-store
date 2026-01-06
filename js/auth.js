@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
             registerMessage.style.color = "green";
 
             setTimeout(() => {
-                window.location.href = "/bravostore/login.html";
+                window.location.href = "/login.html";
             }, 2000);
         });
     }
